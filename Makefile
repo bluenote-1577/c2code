@@ -1,2 +1,7 @@
-themake: c2.cpp 
-	g++ -o out -std=c++11 c2.cpp -lmpfr -lgmp -lpthread -pthread -lcln -lginac; ./out graphs.txt 
+det: det_c2.cpp 
+	c++ -g -o det -std=c++11 det_c2.cpp -lgiac -lgmp; ./det graphs.txt 2> out.txt
+
+gen: generation_c2.cpp
+	c++ -g -o det -std=c++11 generation_c2.cpp -lgiac -lgmp; ./det graphs.txt 2> gen_out.txt
+
+
