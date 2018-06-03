@@ -687,24 +687,24 @@ int main(int argc, char** argv)
             
             sixinv = poly_in_x;
             //std::cout << poly_in_x << '\n';
-            if(sixinv.type == _SYMB){
-                //std::cout << *(poly_in_x._SYMBptr ->feuille._VECTptr) << '\n';
-                vecteur* f_vect = sixinv._SYMBptr ->feuille._VECTptr;
-
-                for(auto it = f_vect->begin(); it != f_vect ->end(); it++){
-                    if(it-> _SYMBptr -> feuille.type == _VECT){
-                        vecteur* vect = it->_SYMBptr -> feuille._VECTptr;
-                        for(auto jt = vect->begin(); jt != vect->end(); jt++){
-                            if (jt->type == _INT_){
-                                //*jt = *jt % p;
-                            }
-                        }
-                        //std::cout << vect << '\n';
-                    }
-                }
-
-                //std::cerr << sixinv << "MODDED \n";
-            }
+//            if(sixinv.type == _SYMB){
+//                //std::cout << *(poly_in_x._SYMBptr ->feuille._VECTptr) << '\n';
+//                vecteur* f_vect = sixinv._SYMBptr ->feuille._VECTptr;
+//
+//                for(auto it = f_vect->begin(); it != f_vect ->end(); it++){
+//                    if(it-> _SYMBptr -> feuille.type == _VECT){
+//                        vecteur* vect = it->_SYMBptr -> feuille._VECTptr;
+//                        for(auto jt = vect->begin(); jt != vect->end(); jt++){
+//                            if (jt->type == _INT_){
+//                                *jt = *jt % p;
+//                            }
+//                        }
+//                        //std::cout << vect << '\n';
+//                    }
+//                }
+//
+//                //std::cerr << sixinv << "MODDED \n";
+//            }
 
             std::cerr << sixinv << "ITERATION  " << i << '\n';
 //            std::cout << new_symbols << '\n';

@@ -10,7 +10,7 @@ _mode= POLYV;
 
 _affc =7$
 /*vnumR a$
-r/ead(kirchoffmat,a)$
+read(kirchoffmat,a)$
 n = size(a)$
 vnumR kirchoff_mat[1:n]$
 read(kirchoffmat,kirchoff_mat)$
@@ -31,8 +31,9 @@ end;
 
 maple_get(d1poly)$
 maple_get(d2poly)$
-p =13$
+p =11$
 
+time_s;
 sixinv = b_1^(p-1)*b_2^(p-1)$
 dimvar old_var[1:2]$
 dim old_poly[1:2]$
@@ -96,7 +97,8 @@ for j=1 to size(edge_sequence) {
 
 sixinv;
 
-     
+time_t;
+quit;
 
 
 
