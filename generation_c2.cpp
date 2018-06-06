@@ -588,41 +588,28 @@ int main(int argc, char** argv)
     dodgson1_file.close();
     dodgson2_file.close();
     
-    exit(0);
-    
 
     //I_1.insert(bridge);
     //J_1.insert(bridge);
     //K_2.insert(bridge);
+    //
+    vecteur exp5;
+    vecteur exp6;
 
-    vecteur dodgson_1 = compute_kirchoff_matrix(exps_topass,inc_matrix,I_1,J_1,K_1);
-    auto dodgson_2 = compute_kirchoff_matrix(exps_all,inc_matrix,I_2,J_2,K_2);
+    vecteur dodgson_1 = compute_kirchoff_matrix(exp5,inc_matrix,I_1,J_1,K_1);
+    auto dodgson_2 = compute_kirchoff_matrix(exp6,inc_matrix,I_2,J_2,K_2);
     gen nth_inv = -1 * _det(dodgson_1, giac::context0) * _det(dodgson_2,giac::context0);
-
-    for(int i = 0; i < dodgson_1.size(); i++){
-        for (int j = 0; j < dodgson_1.size(); j++){
-            std:: cerr << dodgson_1[i][j] << ' ';
-        }
-        std::cerr << "DODGSON1 FOR SIXINV " << '\n';
-    }
-
-    for(int i = 0; i < dodgson_2.size(); i++){
-        for (int j = 0; j < dodgson_2.size(); j++){
-            std:: cerr << dodgson_2[i][j] << ' ';
-        }
-        std::cerr << "DODGSON2 FOR SIXINV " << '\n';
-    }
 
     std::cout << exps_all << '\n';
     //std::cout << r2e(nth_inv, exps_all, giac::context0)<< '\n';
 
-    std::set<int> primes = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,49,53,59,61,67,71,73};
+    std::set<int> primes = {2};
 
     for(int p : primes){
 
         clock_t begin = clock();
 
-        vecteur old_symbols = makevecteur(gen(std::string("a_0"),&ct),gen(std::string("b_0"),&ct));
+        vecteur old_symbols = makevecteur(gen(std::string("b0_0"),&ct),gen(std::string("b0_1"),&ct));
         vecteur new_symbols;
         std::map<std::string, gen> substitute_map;
         std::map<std::string, std::vector<std::set<int>>> IJK;
@@ -648,9 +635,10 @@ int main(int argc, char** argv)
                 last = true;
             }
             for(int j = 0; j < old_symbols.size(); j++){
-              
-
                 std::string key = old_symbols[j]._IDNTptr -> id_name;
+                std::string id = key.substr(key.find('_') + 1);
+                int term = std::stoi(id);
+
                 std::set<int> i_1 = IJK[key][0];
                 std::set<int> j_1 = IJK[key][1];
                 std::set<int> k_1 = IJK[key][2];
@@ -670,7 +658,8 @@ int main(int argc, char** argv)
                 vecteur exps2;
 
                 auto dodgson1 = _det(compute_kirchoff_matrix(exps1,inc_matrix,i_1,j_1,k_1),&ct);
-                std::string var1 = "a_" + std::to_string(i) + std::to_string(j);
+
+                std::string var1 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2+1);
                 gen a_var = gen(var1,&ct);
                 if(!is_zero(dodgson1,&ct)){
                     term1_zero = false;
@@ -679,11 +668,9 @@ int main(int argc, char** argv)
                     IJK.insert(std::make_pair(std::string(a_var._IDNTptr-> id_name), std::vector<std::set<int>>{i_1,j_1,k_1}));
                 }
 
-                //std::cerr << var1 << '\n' << dodgson1 << '\n';
-                std::cerr << var1 << '\n' << i_1.size() << '\n';
 
                 auto dodgson2 = _det(compute_kirchoff_matrix(exps2,inc_matrix,i_2,j_2,k_2),&ct);
-                std::string var2 = "b_" + std::to_string(i) + std::to_string(j);
+                std::string var2 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2);
                 gen b_var = gen(var2,&ct);
                 if(!is_zero(dodgson2,&ct)){
                     term2_zero = false;
@@ -692,8 +679,18 @@ int main(int argc, char** argv)
                     IJK.insert(std::make_pair(std::string(b_var._IDNTptr->id_name), std::vector<std::set<int>>{i_2,j_2,k_2}));
                 }
 
-                //std::cerr << var2 << '\n' << dodgson2 << '\n';
-                std::cerr << var2 << '\n' << i_2.size() << '\n';
+                if(!last){
+                    if(!term1_zero){
+                        std::cerr << var1 << ',' << 'N' << '\n';
+                    }
+                    if(!term2_zero){
+                        std::cerr << var2 << ',' << "N" << '\n';
+                    }
+                }
+                else{
+                    std::cerr << var1 << ',' << dodgson1 << '\n';
+                    std::cerr << var2 << ',' << dodgson2 << '\n';
+                }
 
                 gen subvalue;
                 
@@ -736,14 +733,10 @@ int main(int argc, char** argv)
                 tosub.push_back(substitute_map[identifier]);
 
             }
-//            std::cout << tosub << "TOSUB \n";
 
             gen subcmd = makesequence(sixinv,old_symbols,tosub);
             gen poly_in_x = _subst(subcmd,&ct);
-            //gen cmd = makevecteur(poly_in_x,x);
-            //poly_in_x = _symb2poly(cmd,&ct);
 
-//            std:: cout << "VECTOR FORM *** " << poly_in_x << '\n';
             gen coeffcmd = makesequence(poly_in_x,x,p-1);
 
             if(!last){
@@ -752,39 +745,12 @@ int main(int argc, char** argv)
 
             
             sixinv = poly_in_x;
-            //std::cout << poly_in_x << '\n';
-            if(sixinv.type == _SYMB){
-                //std::cout << *(poly_in_x._SYMBptr ->feuille._VECTptr) << '\n';
-                vecteur* f_vect = sixinv._SYMBptr ->feuille._VECTptr;
-
-                for(auto it = f_vect->begin(); it != f_vect ->end(); it++){
-                    if(it-> _SYMBptr -> feuille.type == _VECT){
-                        vecteur* vect = it->_SYMBptr -> feuille._VECTptr;
-                        for(auto jt = vect->begin(); jt != vect->end(); jt++){
-                            if (jt->type == _INT_){
-                                //*jt = *jt % p;
-                            }
-                        }
-                        //std::cout << vect << '\n';
-                    }
-                }
-
-                //std::cerr << sixinv << "MODDED \n";
-            }
-
-            std::cerr << sixinv << "ITERATION  " << i << '\n';
-//            std::cout << new_symbols << '\n';
+            std::cerr << "<" << sixinv << "ITERATION  " << i << '\n';
             old_symbols = new_symbols;
         }
-//        gen new_nth_inv = nth_inv;
-//        for(int i = 1; i < p-1; i++){
-//            new_nth_inv = new_nth_inv * nth_inv;
-//            reduced_mod_p(new_nth_inv,p);
-//        }
-//
+
         clock_t end = clock();
-        //std::cout << (end-begin)/(double)CLOCKS_PER_SEC << " seconds taken. \n";
-//        auto coeff = find_coeff_p(new_nth_inv,p,exps_all);
+
         std::cout << (end-begin)/(double)CLOCKS_PER_SEC << " seconds taken. coeff for p = " << p << ": " << sixinv << ", c_2 is "
             << sixinv % p << '\n';
     }
