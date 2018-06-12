@@ -384,27 +384,39 @@ std::vector<int> detect_edge_sequence(std::set<int>& I, std::set<int>& J, std::v
     std::sort(edge_sequences.begin(), edge_sequences.end());
     std::vector<int> edge_sequence_good;
 
-    for(auto pair : edge_sequences){
+    while(!edge_sequences.empty()){
+        auto pair = edge_sequences[0];
         auto vect = pair.second;
+        if(pair.first == 0){
+            edge_sequences.erase(edge_sequences.begin());
+            continue;
+        }
+        int good_edge = -1;
         for(int edge : vect){
-            bool alrdy_contained = false;
 
             if(edge == -1){
-                alrdy_contained = true;
+                continue;
             }
 
-            for(int goodedge : edge_sequence_good){
-                if(goodedge == edge){
-                    alrdy_contained = true;
-                }
-            }
+            edge_sequence_good.push_back(edge);
+            good_edge = edge;
+            break;
+        }
 
-            if(!alrdy_contained){
-                edge_sequence_good.push_back(edge);
+        std::cout << pair.first << " " << pair.second << '\n';
+        for(auto& vectpair : edge_sequences){
+            for(auto it = vectpair.second.begin(); it != vectpair.second.end(); ++it){
+                if(*it == good_edge){
+                    vectpair.first -= 1;
+                    vectpair.second.erase(it);
+                    break;
+               }
             }
         }
-        std::cout << pair.first << " " << pair.second << '\n';
+
+        std::sort(edge_sequences.begin(), edge_sequences.end());
     }
+
     std::cout << "EDGE SEEQ GOOD " << edge_sequence_good << '\n';
     return edge_sequence_good;
 }
@@ -535,7 +547,18 @@ int main(int argc, char** argv)
     vecteur exps_topass;
     vecteur exps_test;
 
-    std::vector<int> edge_sequence = detect_edge_sequence(I_2,J_2,inc_matrix,del_cont_edges);
+    std::vector<int> edge_sequence = detect_edge_sequence(I_2,J_2,inc_matrix,del_cont_edges); 
+//    Kill all loops first.
+//
+//    //8,39 testing
+//  std::vector<int> edge_sequence = {13,15,5,6,10,9,3,2,4,1};
+//  std::vector<int> edge_sequence = {1,13,5,6,10,15,9,3,2,4};
+//  std::vector<int> edge_sequence = {2,4,13,5,6,10,15,9,3,1};
+//  std::vector<int> edge_sequence = {4,13,5,6,10,15,9,3,1,2};
+//  std::vector<int> edge_sequence = {10,14,4,12,17,5,11,6,13,7,21,22,18,19,1,3};
+//    std::vector<int> edge_sequence = {21,18,19,22,7,17,10,14,4,12,5,11,6,13,1,3};
+//    std::vector<int> edge_sequence = {18,19,22,17,10,21,14,4,12,5,7,11,6,13,1,3};
+//    std::vector<int> edge_sequence = {5,11,18,21,7,22,1,6,12,13,19,17,10,14,4,3};
 
     vecteur dodgson1 = compute_kirchoff_matrix(exps_topass,inc_matrix,I_1,J_1,K_1);
     auto dodgson2 = compute_kirchoff_matrix(exps_all,inc_matrix,I_2,J_2,K_2);
@@ -678,17 +701,12 @@ int main(int argc, char** argv)
 
                     IJK.insert(std::make_pair(std::string(b_var._IDNTptr->id_name), std::vector<std::set<int>>{i_2,j_2,k_2}));
                 }
-
-                if(!last){
-                    if(!term1_zero){
-                        std::cerr << var1 << ',' << 'N' << '\n';
-                    }
-                    if(!term2_zero){
-                        std::cerr << var2 << ',' << "N" << '\n';
-                    }
-                }
-                else{
+                
+                if(!term1_zero){
                     std::cerr << var1 << ',' << dodgson1 << '\n';
+                }
+
+                if(!term2_zero){
                     std::cerr << var2 << ',' << dodgson2 << '\n';
                 }
 

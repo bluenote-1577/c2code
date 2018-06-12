@@ -547,7 +547,7 @@ int main(int argc, char** argv)
     //std::cout << exps_all << '\n';
     //std::cout << r2e(nth_inv, exps_all, giac::context0)<< '\n';
 
-    std::set<int> primes = {5,7,11,13,17,19,23,29,31,37,41,43,47,49,53,59,61,67,71,73};
+    std::set<int> primes = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,49,53,59,61,67,71,73};
 
     for(int p : primes){
 
@@ -607,7 +607,7 @@ int main(int argc, char** argv)
                 std::string var1 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2+1);
                 gen a_var = gen(var1,&ct);
                 if(!is_zero(dodgson1,&ct)){
-                    std::cout << var1 << ',' << dodgson1 << "not  zero \n";
+                    //std::cout << var1 << ',' << dodgson1 << "not  zero \n";
 
                     term1_zero = false;
                     new_symbols.push_back(a_var);
@@ -621,7 +621,7 @@ int main(int argc, char** argv)
                 std::string var2 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2);
                 gen b_var = gen(var2,&ct);
                 if(!is_zero(dodgson2,&ct)){
-                    std::cout << var2 << ',' << dodgson2 << "not zero \n";
+                    //std::cout << var2 << ',' << dodgson2 << "not zero \n";
 
                     term2_zero = false;
                     new_symbols.push_back(b_var);
