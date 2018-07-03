@@ -20,6 +20,17 @@ using namespace giac;
 //    p_type x{"x"},y{"y"},z{"z"};
 //    std::cout<< x*y*z + (x-z)*(x+y) << '\n';
 //
+struct sub_poly{
+    gen poly;
+    bool operator < (const sub_poly &other) const{
+        auto polyptr = poly._VECTptr;
+        for(gen& thing : *polyptr){
+            thing.print_universal(giac::context0);
+        }
+        return true;
+    }
+
+};
 void initial_processing (std::vector<std::string>& all_lines, std::vector<std::string>& periods, std::vector<std::string>& unprocessed_edges){
 
     for(auto graph_info : all_lines){
@@ -578,6 +589,7 @@ int main(int argc, char** argv)
             if(i == edge_sequence.size() -1){
                 last = true;
             }
+            
             for(int j = 0; j < old_symbols.size(); j++){
               
                 std::string key = old_symbols[j]._IDNTptr -> id_name;
@@ -616,6 +628,16 @@ int main(int argc, char** argv)
                 }
 
                 std::cerr << var1 << "," << dodgson1 << '\n';
+                auto f_dodgson1 = giac::_factors(dodgson1,giac::context0);
+                if(f_dodgson1.type == giac::_VECT){
+                    std::cout << (f_dodgson1._VECTptr ->operator[](0)) << "feuille" << f_dodgson1 << '\n';
+                    std::cout << f_dodgson1 << "poly \n";
+                }
+
+                else{
+                    std::cout << std::to_string(f_dodgson1.type) << " type " << f_dodgson1 << '\n';
+                }
+                std::cerr << "F" << f_dodgson1<< '\n' ;
 
                 auto dodgson2 = _det(compute_kirchoff_matrix(exps2,inc_matrix,i_2,j_2,k_2),&ct);
                 std::string var2 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2);
@@ -630,6 +652,8 @@ int main(int argc, char** argv)
                 }
 
                 std::cerr << var2 << "," << dodgson2<< '\n';
+                auto f_dodgson2 = giac::_factors(dodgson2,giac::context0);
+                std::cerr << ">" << f_dodgson2 << '\n';
 
 
                 gen subvalue;
