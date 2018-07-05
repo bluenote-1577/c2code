@@ -15,9 +15,19 @@
 
 #include <giac/giac.h>
 
+#define CHECK_BIT(var,pos) ((var) & (1<<(pos)))
+
 typedef std::vector<std::pair<int,int>> _graph;
 std::map<int,std::string> var_edge_map;
 std::set<int> emptyset;
+
+
+/// 3 bits. 
+// First bit : which other 3 valent vertex to take.
+// Second bit : How we take dodgson edges into consideration when 
+// finding the elimination edge sequence.
+// Third bit : If we want to not eliminate triangles first.
+unsigned int mode = 0;
 
 using namespace giac;
 //using p_type = polynomial<integer,monomial<int>>;
@@ -176,22 +186,28 @@ std::set<std::set<int>> get_triangles(const _graph& graph){
 }
 
 void scan_triangles_and_decomplete(const std::vector<_graph>& graphs,
-        std::vector<bool>& has_triangles, std::vector<int>& vertices_to_decomplete){
+        std::vector<bool>& has_triangles, std::vector<int>& vertices_to_decomplete,
+        std::vector<std::string>& periods){
     int notricount = 0;
     int tricount = 0;
     for(auto& graph : graphs){
         std::set<std::set<int>> triangles;
         triangles = get_triangles(graph);
-//        std::cout << triangles.size() << periods[tricount + notricount];
+        std::cout << triangles.size() << periods[tricount + notricount] << '\n';
 
         has_triangles.push_back(!triangles.empty());
 
         //All decompleted vertices just end up begin "2" anyways...
         if(!triangles.empty()){
-            auto it = (triangles.begin()->begin());
+            auto it = (((triangles.begin()))->begin());
             //Take the second vertex, seems to be more effective for some reason.
-            //std::advance(it,1);
-            int vertex = *(++it);
+            if(CHECK_BIT(mode,3)){
+                std::advance(it,1);
+            }
+            else{
+                std::advance(it,0);
+            }
+            int vertex = *(it);
             vertices_to_decomplete.push_back(vertex);
 //            std::cout << vertex << '\n';
             tricount++;
@@ -423,7 +439,7 @@ compute_kirchoff_matrix(vecteur& expressions, const std::vector<std::vector<int>
 
 std::vector<int> detect_edge_sequence(std::vector<std::vector<int>>& inc_matrix,
         std::set<int>& del_cont_edges, const vecteur& to_reduce,const std::set<std::set<int>>& triangles,
-        _graph decompleted_graph, std::set<int>& edges_other_3valent){
+        _graph decompleted_graph){
     int num_edge= inc_matrix.size();
     int num_vertex = inc_matrix[0].size();
 
@@ -458,13 +474,6 @@ std::vector<int> detect_edge_sequence(std::vector<std::vector<int>>& inc_matrix,
                         int end2 = decompleted_graph[j].second;
                         bool is_triangle_edge = false;
 
-//                        if(edges_other_3valent.find(j) != edges_other_3valent.end()){
-//                            if(!vector_contains(edge_sequence_good,j)){
-//                                edge_sequence_good.push_back(j);
-//                            }
-//                            std::cout << j << "other 3 valent\n" << '\n';
-//                        }
-
                         for(auto& st : triangles){
                             if(st.find(end1) != st.end() &&
                                     st.find(end2) != st.end()){
@@ -486,7 +495,9 @@ std::vector<int> detect_edge_sequence(std::vector<std::vector<int>>& inc_matrix,
 
                     else{
                         edge_subseq.push_back(-1);
-                        connectivity= connectivity + 1;
+                        if(CHECK_BIT(mode,1)){
+                            connectivity++;
+                        }
                     }
                 }
             }
@@ -585,6 +596,15 @@ int main(int argc, char** argv)
         return 0;
     }
 
+
+    if(argc == 3){
+       mode = std::stoi(argv[2]);
+       if(CHECK_BIT(mode,0)){std::cout << "bit 1 check,";}
+       if(CHECK_BIT(mode,1)){std::cout << "bit 2 check,";}
+       if(CHECK_BIT(mode,2)){std::cout << "bit 3 check,";}
+       if(CHECK_BIT(mode,3)){std::cout << "bit 3 check,";}
+    }
+
     std::vector<_graph> graphs;
     std::vector<std::vector<std::vector<int>>> incidence_matrices;
     std::vector<std::string> periods;
@@ -611,7 +631,7 @@ int main(int argc, char** argv)
     std::vector<int> vertices_to_decomplete;
     std::vector<bool> has_triangles;
     
-    scan_triangles_and_decomplete(graphs,has_triangles,vertices_to_decomplete);
+    scan_triangles_and_decomplete(graphs,has_triangles,vertices_to_decomplete,periods);
     decompleted_graphs = get_incidence_matrices(incidence_matrices,graphs,vertex_set,vertices_to_decomplete);
 
     /*Testing things. This is where we operate only on one specific graph.
@@ -621,34 +641,42 @@ int main(int argc, char** argv)
     context ct;
     gen x(std::string("x"),&ct);
 
-    //CONSTRUCTION OF D^6
-
-    //First we find the edges to construct the 6 invariant with.
-    //We want 2 sets of edges that are disjoint.
-
     int edgeindex = 0;
 
+    ///Output graph in csv format for easy viewing
     std::ofstream graphcsv_file("gr.csv");
+
     for (auto edge : decompleted_graphs[0]){
         std::cout << edgeindex << " | " << edge.first << "," << edge.second << '\n';
         graphcsv_file << edge.first << "," << edge.second << '\n';
         edgeindex++;
     }
+
     graphcsv_file.close();
+    //Output graph in csv format for easy viewing
 
     std::set<std::set<int>> triangles_for_test;
     triangles_for_test = get_triangles(decompleted_graphs[0]);
-   //TODO
-   triangles_for_test = std::set<std::set<int>>();
+   
+    if(CHECK_BIT(mode,2)){
+        triangles_for_test = std::set<std::set<int>>();
+    }
 
+    //output triangles
     for(auto st : triangles_for_test){
+        std::cout << "triangles for " << periods[0] << '\n';
+        std::cout << "********" << '\n';
         for(int vertex : st){
             std::cout << vertex << ',';
         }
-        std::cout << '\n';
+        std::cout << "\n********" << '\n';
     }
+    //output triangles
 
     bool has_triangle = has_triangles[0];
+    auto inc_matrix = incidence_matrices[0];
+    int num_edge = inc_matrix.size();
+    int num_vertex = inc_matrix[0].size();
 
     if(!has_triangle){
         std::cout << "doesn't have a triangle. need to make changes to algorithm before proceeding" << '\n';
@@ -656,20 +684,6 @@ int main(int argc, char** argv)
     }
 
 
-    auto inc_matrix = incidence_matrices[0];
-    int num_edge = inc_matrix.size();
-    int num_vertex = inc_matrix[0].size();
-
-    for(auto column : inc_matrix){
-        for( auto element : column){
-//            std::cout << element << ' ';
-        }
-
-//        std::cout << '\n';
-    }
-
-    //Get the 3- valent vertices and the corresponding edges.
-    std::set<int> edges_other_3valent;
     std::set<int> del_cont_edges;
     std::vector<std::set<int>> all_edges_3valent;
     std::vector<int> edges_3_valent;
@@ -677,6 +691,7 @@ int main(int argc, char** argv)
     bool joined_3valent = false;
     _graph decompleted_graph = decompleted_graphs[0];
 
+    //Get the 3- valent vertices and the corresponding edges.
     std::map<int,std::set<int>> vertex_edges;
     for(int i = 0; i < decompleted_graph.size(); i++){
 
@@ -704,7 +719,7 @@ int main(int argc, char** argv)
         }
     }
 
-    std::cout << all_edges_3valent.size() << "# 3 valent vertices \n";
+    std::cout << all_edges_3valent.size() << " # 3 valent vertices \n";
     if (has_triangle){
 
         int index1 = -1;
@@ -757,34 +772,39 @@ int main(int argc, char** argv)
             }
         }
 
+        int triangle_to_take = 0;
+
+        if(CHECK_BIT(mode,0)){
+            triangle_to_take = 1;
+        }
+
+        int mycount = 0;
         for(int i = 0; i < all_edges_3valent.size(); i++){
             if(i != index1 && i != index2){
-
-                if(edges_3_valent.size() == 6){
-                    edges_other_3valent = all_edges_3valent[i];
-                    std::cout << i << " other 3 valent \n";
-                }
-
                 for(int edge : all_edges_3valent[i]){
-                    if(!vector_contains(edges_3_valent,edge)){
 
-                        if(edges_3_valent.size() == 6){
-                            continue;
+                    if(triangle_to_take != mycount){
+                        std::cout << edge << " other 3 valent \n";
+                    }
+
+                    else{
+                        if(!vector_contains(edges_3_valent,edge)){
+
+                            std::cout<< edge << "other set 6 inv\n";
+
+                            if(edges_3_valent.size() == 6){
+                                continue;
+                            }
+
+                            edges_3_valent.push_back(edge);
+                            del_cont_edges.insert(edge);
+                            
                         }
-
-                        edges_3_valent.push_back(edge);
-                        del_cont_edges.insert(edge);
-                        std::cout<< edge << "other set 6 inv\n";
-                        
                     }
                 }
+                mycount++;
             }
         }
-    }
-
-    for(auto thing : edges_other_3valent){
-        std::cout << "other 3 valent ";
-        std::cout << thing << '\n';
     }
 
     if(edges_3_valent.size() != 6){
@@ -827,6 +847,8 @@ int main(int argc, char** argv)
 
         dodgson1_poly = _det(dodgson1,giac::context0);
         dodgson2_poly = _det(dodgson2,giac::context0);
+
+        fiveinv = dodgson1_poly * dodgson2_poly;
         
     }
 
@@ -856,15 +878,54 @@ int main(int argc, char** argv)
 
         dodgson1_poly = _det(dodgson1,giac::context0) - _det(dodgson2,giac::context0);
         dodgson2_poly = _det(dodgson3,giac::context0);
+        fiveinv = dodgson1_poly * dodgson2_poly;
    }
+
+//   else{
+//
+//        I_1 = {0,1};
+//        J_1 = {3,4};
+//        K_1 = {2};
+//
+//        std::cout << edges_3_valent[0] << edges_3_valent[1]  << edges_3_valent[2] <<   edges_3_valent[3] << edges_3_valent[4]<< edges_3_valent[5];
+//
+//        I_2 = {0,2,3};
+////        I_2 = {edges_3_valent[0],edges_3_valent[3],edges_3_valent[2]};
+////        J_2 = {edges_3_valent[1],edges_3_valent[4],edges_3_valent[2]};
+//        J_2 = {1,4,2};
+//
+//        std::set<int> I_3,J_3,K_3,I_4,J_4,K_4;
+//        I_3 = {0,3};
+//        J_3 = {1,4};
+//        K_3 = {2};
+//
+//        I_4 = {0,1,2};
+//        J_4 = {2,3,4};
+//
+//
+//        vecteur exps_all;
+//        vecteur exps_topass;
+//        vecteur exps_3;
+//        vecteur exps_4;
+//
+//        auto dodgson1 = compute_kirchoff_matrix(exps_topass,inc_matrix,I_1,J_1,K_1);
+//        auto dodgson2 = compute_kirchoff_matrix(exps_all,inc_matrix,I_2,J_2,K_2);
+//        auto dodgson3 = compute_kirchoff_matrix(exps_3,inc_matrix,I_3,J_3,K_3);
+//        auto dodgson4 = compute_kirchoff_matrix(exps_4,inc_matrix,I_4,J_4,K_4);
+//
+//        dodgson1_poly = _det(dodgson1,giac::context0);
+//        dodgson2_poly = _det(dodgson2,giac::context0);
+//        auto dodgson3_poly = _det(dodgson3,giac::context0);
+//        auto dodgson4_poly = _det(dodgson4,giac::context0);
+//       
+//        del_cont_edges = {0,1,2,3,4};
+//   }
 
     vecteur exps_test;
     
-    fiveinv = dodgson1_poly * dodgson2_poly;
     std::ofstream fiveinv_file("fiveinv");
     fiveinv_file << "fiveinv := " << fiveinv << ":" << '\n';
     fiveinv_file.close();
-
 
     std::cout << "factoring\n";
 
@@ -952,7 +1013,7 @@ int main(int argc, char** argv)
     std::cout << to_reduce << " TO REDUCE \n";
 
     std::vector<int> edge_sequence = detect_edge_sequence(inc_matrix,del_cont_edges,to_reduce,
-            triangles_for_test,decompleted_graphs[0],edges_other_3valent); 
+            triangles_for_test,decompleted_graphs[0]); 
 
     std::ofstream edges3valent_file("edges3valent");
     std::ofstream edgeseq_file("edgeseq");
@@ -1001,197 +1062,6 @@ int main(int argc, char** argv)
     edgeseq_file.close();
     dodgson1_file.close();
     dodgson2_file.close();
-       
-
-    //I_1.insert(bridge);
-    //J_1.insert(bridge);
-    //K_2.insert(bridge);
-    //
-    vecteur exp5;
-    vecteur exp6;
-    vecteur exp7;
-    vecteur exp8;
-
-//    std::vector<int> edgesrand = {0,1,2,6,10,11};
-////    std::vector<int> edgesrand = {2,8,9,15,16};
-//    std::set<int> I_9 = {edgesrand[0],edgesrand[1]};
-//    std::set<int> J_9 = {edgesrand[3],edgesrand[4]};
-//    std::set<int> K_9 = {edgesrand[2],edgesrand[5]};
-//
-//    std::set<int> I_19 = {edgesrand[0],edgesrand[3]};
-//    std::set<int> J_19 = {edgesrand[1],edgesrand[4]};
-//    std::set<int> K_19 = {edgesrand[2]};
-//
-//    //std::cout << edgesrand[0] << edgesrand[1]  << edgesrand[3] << edgesrand[4];
-//
-//    std::set<int> I_8 = {edgesrand[0],edgesrand[3],edgesrand[2],edgesrand[5]};
-//    std::set<int> J_8 = {edgesrand[1],edgesrand[4],edgesrand[2],edgesrand[5]};
-//    std::set<int> K_8;
-//
-//    std::set<int> I_18 = {edgesrand[0],edgesrand[1],edgesrand[2]};
-//    std::set<int> J_18 = {edgesrand[3],edgesrand[4],edgesrand[2]};
-//    std::set<int> K_18;
-//
-//    vecteur poly_1 = compute_kirchoff_matrix(exp5,inc_matrix,I_1,J_1,K_1);
-//    auto poly_2 = compute_kirchoff_matrix(exp6,inc_matrix,I_2,J_2,K_2);
-//
-//    auto dodgpoly1 = _det(poly_1,giac::context0);
-//    auto dodgpoly2 = _det(poly_2,giac::context0);
-//
-//    auto fiveinv = dodgpoly1*dodgpoly2;
-//
-
-
-    exit(0);
-
-    //std::cout << r2e(nth_inv, exps_all, giac::context0)<< '\n';
-
-    std::set<int> primes = {2};
-
-    for(int p : primes){
-
-        clock_t begin = clock();
-
-        vecteur old_symbols = makevecteur(gen(std::string("b0_0"),&ct),gen(std::string("b0_1"),&ct));
-        vecteur new_symbols;
-        std::map<std::string, gen> substitute_map;
-        std::map<std::string, std::vector<std::set<int>>> IJK;
-
-        std::vector<std::set<int>> to_insert1 = {I_1,J_1,K_1};
-        std::vector<std::set<int>> to_insert2 = {I_2,J_2,K_2};
-
-        IJK.insert(std::make_pair(std::string(old_symbols[0]._IDNTptr->id_name),to_insert1));
-        IJK.insert(std::make_pair(std::string(old_symbols[1]._IDNTptr->id_name),to_insert2));
-
-        //std::cout << IJK.size() << '\n';
-
-        gen sixinv(1);
-        for(int i = 0; i < p-1; i++){
-            sixinv = sixinv * old_symbols[0] * old_symbols[1];
-        }
-
-        for(int i = 0; i < edge_sequence.size(); i++){
-            new_symbols.clear();
-            bool last = false;
-
-            if(i == edge_sequence.size() -1){
-                last = true;
-            }
-            for(int j = 0; j < old_symbols.size(); j++){
-                std::string key = old_symbols[j]._IDNTptr -> id_name;
-                std::string id = key.substr(key.find('_') + 1);
-                int term = std::stoi(id);
-
-                std::set<int> i_1 = IJK[key][0];
-                std::set<int> j_1 = IJK[key][1];
-                std::set<int> k_1 = IJK[key][2];
-                std::set<int> i_2 = IJK[key][0];
-                std::set<int> j_2 = IJK[key][1];
-                std::set<int> k_2 = IJK[key][2];
-
-                int edge = edge_sequence[i];
-                i_2.insert(edge);
-                j_2.insert(edge);
-                k_1.insert(edge);
-
-                bool term1_zero = true;
-                bool term2_zero = true;
-
-                vecteur exps1;
-                vecteur exps2;
-
-                auto dodgson1 = _det(compute_kirchoff_matrix(exps1,inc_matrix,i_1,j_1,k_1),&ct);
-
-                std::string var1 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2+1);
-                gen a_var = gen(var1,&ct);
-                if(!is_zero(dodgson1,&ct)){
-                    term1_zero = false;
-                    new_symbols.push_back(a_var);
-
-                    IJK.insert(std::make_pair(std::string(a_var._IDNTptr-> id_name), std::vector<std::set<int>>{i_1,j_1,k_1}));
-                }
-
-
-                auto dodgson2 = _det(compute_kirchoff_matrix(exps2,inc_matrix,i_2,j_2,k_2),&ct);
-                std::string var2 = "b" + std::to_string(i+1) + "_" + std::to_string(term * 2);
-                gen b_var = gen(var2,&ct);
-                if(!is_zero(dodgson2,&ct)){
-                    term2_zero = false;
-                    new_symbols.push_back(b_var);
-
-                    IJK.insert(std::make_pair(std::string(b_var._IDNTptr->id_name), std::vector<std::set<int>>{i_2,j_2,k_2}));
-                }
-                
-                if(!term1_zero){
-                    std::cerr << var1 << ',' << dodgson1 << '\n';
-                }
-
-                if(!term2_zero){
-                    std::cerr << var2 << ',' << dodgson2 << '\n';
-                }
-
-                gen subvalue;
-                
-                if(!last){
-                    if(term2_zero){
-                        subvalue = a_var; 
-                    }
-
-                    else if (term1_zero){
-                        subvalue = x * b_var;
-                    }
-                    
-                    else{
-                       subvalue = x*b_var + a_var; 
-                    }
-                }
-
-                else{
-                    if(term2_zero){
-                        subvalue = dodgson1;
-                    }
-
-                    else{
-                        subvalue = dodgson2;
-                    }
-                }
-
-
-                substitute_map.insert(std::make_pair(key, subvalue));
-
-                if(term1_zero && term2_zero){
-                    std::cerr << "both are zero\n";
-                    exit(0);
-                }
-            }
-
-            vecteur tosub;
-            for(int k = 0; k < old_symbols.size(); k++){
-                std::string identifier = std::string(old_symbols[k]._IDNTptr -> id_name);
-                tosub.push_back(substitute_map[identifier]);
-
-            }
-
-            gen subcmd = makesequence(sixinv,old_symbols,tosub);
-            gen poly_in_x = _subst(subcmd,&ct);
-
-            gen coeffcmd = makesequence(poly_in_x,x,p-1);
-
-            if(!last){
-                poly_in_x = _coeff(coeffcmd,&ct);
-            }
-
-            
-            sixinv = poly_in_x;
-            std::cerr << "<" << sixinv << "ITERATION  " << i << '\n';
-            old_symbols = new_symbols;
-        }
-
-        clock_t end = clock();
-
-        std::cout << (end-begin)/(double)CLOCKS_PER_SEC << " seconds taken. coeff for p = " << p << ": " << sixinv << ", c_2 is "
-            << sixinv % p << '\n';
-    }
 }
 
 

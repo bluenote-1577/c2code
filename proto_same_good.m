@@ -114,6 +114,7 @@ else
         return demred(j2):
     end if:
 end if 
+
 end proc:
 
 with (LinearAlgebra):
@@ -121,20 +122,20 @@ edge_sequence := ImportMatrix(edgeseq);
 
 P8_39:=[{1, 2}, {1, 3}, {1, 4}, {1, 10}, {2, 3}, {2, 5}, {2, 6}, {3, 7}, {3, 8}, {4, 5}, {4, 6}, {4, 8}, {5, 7}, {5, 9}, {6, 7}, {6, 9}, {7, 10}, {8, 9}, {8, 10}, {9, 10}];
 nthinv:=factor(FiveInvariant(GraphMatrix(DelVertex(P8_39,2)),1,2,3,4,5)):
-read(fiveinv);
-nthinv := fiveinv;
-print(nops(indets(nthinv))):
-read(elim_seq);
+read(fiveinv):
+nthinv := fiveinv:
+print(nops(indets(nthinv)),nops(expand(nthinv))):
+read(elim_seq):
 
 print(nops(nthinv)):
 nthinv := demred(factor(nthinv),elim_seq,true):
 
 #homogenous
-#nthinv := subs(indets(nthinv)[-1]=1,nthinv):
+#nthinv := subs(indets(nthinv)[4]=1,nthinv):
 
 
 print(nops(indets(nthinv))):
-primes := {2,3,5,7,11,13,17,19,23,29,31,37};
+primes := {7};
 print(nops(expand(nthinv))):
 ti := time();
 
@@ -179,84 +180,60 @@ for j in elim_seq do
 
     listofsubs := []:
     for var in indets(sixinv) do
-        new_poly1 := coeff(btopol_reverse[var],var_to_extract):
-        new_poly3 := coeff(btopol_reverse[var],var_to_extract^2):
+        #print(var):
+        new_poly1 := mvcoeff(btopol_reverse[var],var_to_extract):
         new_poly2 := subs(var_to_extract=0,btopol_reverse[var]):
-
-        #print(expand(new_poly1*var_to_extract) + expand(new_poly2) - expand(btopol_reverse[var]));
-        if(expand(new_poly1 * var_to_extract) + expand(new_poly3 * var_to_extract^2) + new_poly2 - btopol_reverse[var] <> 0) then error end if:
 
         tosub1 := 1:
         tosub2 := 1:
-        tosub3 := 1:
-
-        test := 1:
 
         if new_poly1 = 0 then
+            #print(var_to_extract,var,btopol_reverse[var]):
             tosub1 := 0:
         end if:
 
-        if new_poly3 = 0 then
-            tosub3 := 0:
-        end if:
-
         if new_poly2 = 0 then
+            #print(var_to_extract,var,btopol_reverse[var]):
             tosub2 := 0:
         end if:
 
-        for fact in factors(new_poly1)[2] do
-            test := test * fact[1]^fact[2]:
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
-           if assigned(btopoly[fact[1]]) then 
-               tosub1 := tosub1 * btopoly[fact[1]]^fact[2]:
-           else 
-               btopoly[fact[1]] := cat(b_,count):
-               btopol_reverse[cat(b_,count)] := fact[1]:
-               tosub1 := tosub1 * btopoly[fact[1]]^fact[2]:
-               count := count + 1:
-           end if:
-       end do:
+        if new_poly2 = 0 and new_poly1 = 0 then
+            #print("bad"):
+        end if:
 
-       tosub1 := tosub1 * factors(new_poly1)[1]:
-       test := test * factors(new_poly1)[1]:
-       if expand(test) <> expand(new_poly1) then print (test,new_poly1): error end if:
+        if factors(new_poly1)[1] < 0 then
+            tosub1 := -1;
+            new_poly1 := -1 * new_poly1 ;
+        end if:
 
-       for fact in factors(new_poly2)[2] do
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
-           if assigned(btopoly[fact[1]]) then 
-               tosub2 := tosub2 * btopoly[fact[1]]^fact[2]:
-           else 
-               btopoly[fact[1]] := cat(b_,count):
-               btopol_reverse[cat(b_,count)] := fact[1]:
-               tosub2 := tosub2 * btopoly[fact[1]]^fact[2]:
-               count := count + 1:
-           end if:
-       end do:
+        if factors(new_poly2)[1] < 0 then
+            tosub2 := -1;
+            new_poly2 := -1 * new_poly2;
+        end if:
 
-       tosub2 := tosub2 * factors(new_poly2)[1]:
-     for fact in factors(new_poly3)[2] do
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
-           if assigned(btopoly[fact[1]]) then 
-               tosub3 := tosub3 * btopoly[fact[1]]^fact[2]:
-           else 
-               btopoly[fact[1]] := cat(b_,count):
-               btopol_reverse[cat(b_,count)] := fact[1]:
-               tosub3 := tosub3 * btopoly[fact[1]]^fact[2]:
-               count := count + 1:
-           end if:
-       end do:
-       tosub3 := tosub3 * factors(new_poly3)[1]:
+       if new_poly1 = 1 or new_poly1 = -1 then
+           tosub1 := new_poly1;
+       elif assigned(btopoly[new_poly1]) then 
+           tosub1 := tosub1 * btopoly[new_poly1]:
+       else 
+           btopoly[new_poly1] := cat(b_,count):
+           btopol_reverse[cat(b_,count)] := new_poly1:
+           tosub1 := tosub1 * btopoly[new_poly1]:
+           count := count + 1:
+       end if:
 
-       listofsubs := [op(listofsubs), var = tosub3 * x^2 + tosub1 * x + tosub2]:
+       if new_poly2 = 1 or new_poly2 = -1 then
+           tosub2 := new_poly2;
+        elif assigned(btopoly[new_poly2]) then 
+           tosub2 := tosub2 * btopoly[new_poly2]:
+       else 
+           btopoly[new_poly2] := cat(b_,count):
+           btopol_reverse[cat(b_,count)] := new_poly2:
+           tosub2 := tosub2 * btopoly[new_poly2]:
+           count := count + 1:
+       end if:
+
+       listofsubs := [op(listofsubs), var = tosub1 * x + tosub2]:
     end do:
 if false then 
     listofsubs2 := [];
@@ -297,7 +274,7 @@ if false then
                     toadd := toadd + s:
                end do:
 
-              #print(varname,chunklist, smallerpol, poly,toadd):
+              print(varname,chunklist, smallerpol, poly,toadd):
                listofsubs := subs(varname = toadd, listofsubs);
            end if:
         end do:
@@ -307,13 +284,12 @@ end if:
 
     #print(sixinv):
     sixinv := subs(listofsubs,sixinv):
-    #print(listofsubs);
-    #print(sixinv);
+   # print(sixinv);
     for v in indets(sixinv) do
-   #   print(v,btopol_reverse[v]):
+   #    print(v,btopol_reverse[v]):
     end do:
     sixinv := expand(sixinv):
-    sixinv := coeff(sixinv,x^(p-1)):
+    sixinv := mvcoeff(sixinv,x^(p-1)):
     sixinv := sixinv mod p:
     print(nops(sixinv),nops(indets(sixinv))):
 

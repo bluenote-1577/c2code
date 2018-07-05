@@ -134,7 +134,7 @@ nthinv := demred(factor(nthinv),elim_seq,true):
 
 
 print(nops(indets(nthinv))):
-primes := {2,3,5,7,11,13,17,19,23,29,31,37};
+primes := {3};
 print(nops(expand(nthinv))):
 ti := time();
 
@@ -164,6 +164,8 @@ for p in primes do
 sixinv := sixinv^(p-1):
 print(sixinv):
 all_indets := indets(expand(nthinv)):
+most_terms := 0:
+loopcount := 1:
 
 for j in elim_seq do
 #for j in indets(expand(nthinv)) do
@@ -310,15 +312,30 @@ end if:
     #print(listofsubs);
     #print(sixinv);
     for v in indets(sixinv) do
-   #   print(v,btopol_reverse[v]):
+    #  print(v,btopol_reverse[v]):
     end do:
     sixinv := expand(sixinv):
     sixinv := coeff(sixinv,x^(p-1)):
     sixinv := sixinv mod p:
-    print(nops(sixinv),nops(indets(sixinv))):
+    num_indets := nops(indets(sixinv)):
+    num_terms := nops(sixinv):
+    print(num_terms,num_indets):
 
+    if most_terms < num_indets * num_terms then
+        most_terms := num_indets * num_terms:
+    end if:
 end do:
 
-print(p,sixinv,time()-ti);
+print(p,sixinv,time()-ti,most_terms);
+fd := fopen("maxterm_out.txt", WRITE):
+fprintf(fd,"%f",most_terms):
+fclose(fd):
 end do:
+#nthinv := coeff(nthinv^2,indets(nthinv)[1]^2);
+#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
+#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
+#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
+#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
+#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
+
 print(nops(expand(nthinv)),"terms"):
