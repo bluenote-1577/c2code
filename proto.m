@@ -134,7 +134,7 @@ nthinv := demred(factor(nthinv),elim_seq,true):
 
 
 print(nops(indets(nthinv))):
-primes := {2,3,5,7,11,13,17,19,23,29,31,37};
+primes := {7};
 print(nops(expand(nthinv))):
 ti := time();
 
@@ -312,6 +312,7 @@ end if:
     for v in indets(sixinv) do
    #   print(v,btopol_reverse[v]):
     end do:
+    #print(nops(indets(sixinv)), "before"):
     sixinv := expand(sixinv):
     sixinv := coeff(sixinv,x^(p-1)):
     sixinv := sixinv mod p:

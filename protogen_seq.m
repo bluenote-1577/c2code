@@ -67,7 +67,6 @@ if useorder then
     j1 := sequence[1]:
 end if:
 
-#print(j1, "VARIABLE"):
 thedegree_term := degree(x,j1):
 
 #may happen if we choose a bad variable
@@ -85,7 +84,6 @@ if thedegree_term =1 then
 end if:
 print(nops(x)):
 j2:=map(proc(y) if depends(y,j1) then y else NULL end if end proc,[op(x)])[1]:
-#print("VARIALBE pT2"):
 if not (divide(x,j2)) then return x end if:
 if degree(j2,j1) > 1 then return x end if: 
     #print("resultant",nops(j2),nops(x/j2),nops(x),j1):
@@ -137,9 +135,10 @@ print(nops(indets(nthinv))):
 primes := {3}:
 print(nops(expand(nthinv))):
 ti := time():
-
-for p in primes do
-
+recipename := cat("recipes/factor_recipe_",convert(graphname,string)):
+print(recipename):
+fd := fopen(recipename, WRITE):
+################################
   btopoly := table():
   btopol_reverse := table():
   modded := nthinv:
@@ -147,8 +146,8 @@ for p in primes do
   #print(factors(modded)[1]):
   #print(factinv):
   count := 1:
-  list_sixinv := []:
 
+  list_sixinv := []:
   sixinv := 1:
   for fact in factinv do
     polyfact:= fact[1]:
@@ -157,63 +156,41 @@ for p in primes do
     btopoly[polyfact] := cat(b_,count):
     btopol_reverse[cat(b_,count)] := polyfact:
     sixinv := sixinv * cat(b_,count):
+    list_sixinv := [op(list_sixinv), cat(b_,count)]:
     count := count + 1:
    end do:
 
    sixinv := sixinv * factors(modded)[1]:
 
-sixinv := sixinv^(p-1):
+sixinv := sixinv^(5-1):
 print(sixinv):
 all_indets := indets(expand(nthinv)):
 most_terms := 0:
 loopcount := 1:
 
 for j in elim_seq do
-#for j in indets(expand(nthinv)) do
-
     var_to_extract := j:
     if(not has(all_indets,var_to_extract)) then next end if:
     all_indets := subs(var_to_extract = NULL,all_indets):
-    #print(nops(list_sixinv), "list sixinv"):
-
-    lengthset := {}:
-    lengthtable := table():
-    sixinv := sixinv mod p:
-    print(var_to_extract):
+    print(op(list_sixinv), "list sixinv size"): 
     temp_list_sixinv := []:
-    listofsubs := []:
-    for var in indets(sixinv) do
+    toprint_list := []:
+    for var in list_sixinv do
         new_poly1 := coeff(btopol_reverse[var],var_to_extract):
-        new_poly3 := coeff(btopol_reverse[var],var_to_extract^2):
         new_poly2 := subs(var_to_extract=0,btopol_reverse[var]):
-
-        #print(expand(new_poly1*var_to_extract) + expand(new_poly2) - expand(btopol_reverse[var]));
-        if(expand(new_poly1 * var_to_extract) + expand(new_poly3 * var_to_extract^2) + new_poly2 - btopol_reverse[var] <> 0) then error end if:
 
         tosub1 := 1:
         tosub2 := 1:
-        tosub3 := 1:
-
-        test := 1:
 
         if new_poly1 = 0 then
             tosub1 := 0:
-        end if:
-
-        if new_poly3 = 0 then
-            tosub3 := 0:
         end if:
 
         if new_poly2 = 0 then
             tosub2 := 0:
         end if:
 
-        for fact in factors(new_poly1)[2] do
-            test := test * fact[1]^fact[2]:
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
+       for fact in factors(new_poly1)[2] do
            if assigned(btopoly[fact[1]]) then 
                tosub1 := tosub1 * btopoly[fact[1]]^fact[2]:
            else 
@@ -222,20 +199,15 @@ for j in elim_seq do
                tosub1 := tosub1 * btopoly[fact[1]]^fact[2]:
                count := count + 1:
            end if:
+
            if not member(btopoly[fact[1]], temp_list_sixinv) then
                temp_list_sixinv := [op(temp_list_sixinv), btopoly[fact[1]]]:
            end if:
        end do:
 
        tosub1 := tosub1 * factors(new_poly1)[1]:
-       test := test * factors(new_poly1)[1]:
-       if expand(test) <> expand(new_poly1) then print (test,new_poly1): error end if:
 
        for fact in factors(new_poly2)[2] do
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
            if assigned(btopoly[fact[1]]) then 
                tosub2 := tosub2 * btopoly[fact[1]]^fact[2]:
            else 
@@ -248,105 +220,29 @@ for j in elim_seq do
                temp_list_sixinv := [op(temp_list_sixinv), btopoly[fact[1]]]:
            end if:
        end do:
+
        tosub2 := tosub2 * factors(new_poly2)[1]:
-     for fact in factors(new_poly3)[2] do
-            if not member(fact[1], lengthset) then
-                lengthset union {fact[1]};
-               lengthtable[degree(fact[1])] := [op(lengthtable[degree(fact[1])]), fact[1]]:
-           end if:
-           if assigned(btopoly[fact[1]]) then 
-               tosub3 := tosub3 * btopoly[fact[1]]^fact[2]:
-           else 
-               btopoly[fact[1]] := cat(b_,count):
-               btopol_reverse[cat(b_,count)] := fact[1]:
-               tosub3 := tosub3 * btopoly[fact[1]]^fact[2]:
-               count := count + 1:
-           end if:
-       end do:
-       tosub3 := tosub3 * factors(new_poly3)[1]:
+       print(var,tosub1,tosub2):
+       toprint_list := [op(toprint_list), cat(convert(var,string),",",convert(tosub1,string),",",convert(tosub2,string))];
 
-       listofsubs := [op(listofsubs), var = tosub3 * x^2 + tosub1 * x + tosub2]:
-    end do:
-    list_sixinv := temp_list_sixinv:
-if false then 
-    listofsubs2 := [];
-    for key in indices(lengthtable) do
-        for poly in lengthtable[key[1]] do
-           smallerpol := poly;
-           #print(poly);
-           chunklist := [];
-           lengthtable[key[1]] := sort(lengthtable[key[1]]);
-           for poly2 in lengthtable[key[1]] do
-               len := nops(smallerpol):
-               len2 := nops(poly2):
-             #if len-len2 = 0 then print(smallerpol,poly,poly2, "0 LENGTH",smallerpol - poly2) end if:
-             if(len2 < len) or (len = len2 and poly2 <> poly) then
-                 checklen1 := nops(smallerpol - poly2):
-               
-                 if checklen1 = (len - len2) or (smallerpol - poly2) = 0 then
-                     #print(smallerpol, poly2);
-                    smallerpol := smallerpol - poly2:
-                    chunklist := [op(chunklist),btopoly[poly2]];
-                 end if:
-             end if:
-           end do: 
+   end do:
 
-           varname := btopoly[poly];
-           if smallerpol <> 0 then
-#               if assigned(btopoly[smallerpol]) then 
-#                   varsub := btopoly[smallerpol];
-#               else
-#                   varsub := varname;
-#                   btopoly[smallerpol] := varsub;
-#               end if:
-           else 
-               varsub := 0;
-                #btopol_reverse[varname] := smallerpol; 
-               toadd := 0;
-               for s in chunklist do
-                    toadd := toadd + s:
-               end do:
+   fprintf(fd,">%d\n",nops(list_sixinv)):
 
-              #print(varname,chunklist, smallerpol, poly,toadd):
-               listofsubs := subs(varname = toadd, listofsubs);
-           end if:
-        end do:
-    end do:
-end if:
-   # print(listofsubs);
+   for v in op(list_sixinv) do
+       print(v):
+       fprintf(fd, "-%s\n",convert(v,string)):
+   end do:
 
-    #print(sixinv):
-    sixinv := subs(listofsubs,sixinv):
-    #print(listofsubs);
-    #print(sixinv);
-    for v in indets(sixinv) do
-   #   print(v,btopol_reverse[v]):
-    end do:
-    sixinv := expand(sixinv):
-    sixinv := coeff(sixinv,x^(p-1)):
-    #print(sixinv):
-    sixinv := sixinv mod p:
-    num_indets := nops(indets(sixinv)):
-    #print(nops(indets(sixinv))):
-    num_terms := nops(sixinv):
-    print(num_terms,num_indets):
+   for v in op(temp_list_sixinv) do
+       fprintf(fd, "+%s\n",convert(v,string)):
+   end do:
 
-    if most_terms < num_indets * num_terms then
-        most_terms := num_indets * num_terms:
-    end if:
+   for str in toprint_list do
+       fprintf(fd,"%s\n",str):
+   end do:
+   list_sixinv := temp_list_sixinv:
 end do:
-
-print(p,sixinv,time()-ti,most_terms);
-fd := fopen("maxterm_out.txt", WRITE):
-fprintf(fd,"%f",most_terms):
+########################33
 fclose(fd):
-end do:
-#nthinv := coeff(nthinv^2,indets(nthinv)[1]^2);
-#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
-#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
-#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
-#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
-#nthinv := coeff(nthinv,indets(nthinv)[1]^2);
-
-print(nops(expand(nthinv)),"terms"):
 quit:

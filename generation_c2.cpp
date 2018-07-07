@@ -611,17 +611,24 @@ int main(int argc, char** argv)
     std::vector<std::string> unprocessed_edges;
     std::map<_graph, std::set<int>> vertex_set;
     std::vector<std::string> all_lines;
-    std::string filename = argv[1];
-    std::ifstream graph_file(filename);
+    if(argc > 3){
+        std::string graphline = argv[3];
+        all_lines.push_back(graphline);
+    }
 
-    // Get each line of the periods file
-    if(graph_file.is_open())
-    {
-        std::string line;
-        while(std::getline(graph_file,line)){
-            all_lines.push_back(line);
+    else{
+        std::string filename = argv[1];
+        std::ifstream graph_file(filename);
+
+        // Get each line of the periods file
+        if(graph_file.is_open())
+        {
+            std::string line;
+            while(std::getline(graph_file,line)){
+                all_lines.push_back(line);
+            }
+            graph_file.close();
         }
-        graph_file.close();
     }
 
     initial_processing(all_lines,periods,unprocessed_edges); 
@@ -925,6 +932,7 @@ int main(int argc, char** argv)
     
     std::ofstream fiveinv_file("fiveinv");
     fiveinv_file << "fiveinv := " << fiveinv << ":" << '\n';
+    fiveinv_file << "graphname := " << periods[0] << ":" << '\n';
     fiveinv_file.close();
 
     std::cout << "factoring\n";
