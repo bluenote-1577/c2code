@@ -18,7 +18,7 @@
 #include <memory>
 
 //typedef std::unordered_map<std::string,int> variables;
-int NUM_THREADS = 3;
+int NUM_THREADS = 1;
 unsigned char  p =7; 
 std::vector<std::vector<std::pair<std::vector<int>,std::vector<int>>>> sub_maps;
 std::map<int,int> size_map;
@@ -212,18 +212,18 @@ void process_recipe(std::vector<std::vector<std::pair<std::vector<int>,std::vect
                     int itcount = 0;
                     for(auto it = var_set_old.begin(),end = var_set_old.end(); it != end; ++it){
                         old_to_index.insert(std::make_pair(*it,itcount)); 
-//                        std::cout << itcount << " " << *it << ' ';
+                        std::cout << itcount << " " << *it << ' ';
                         itcount++;
                     }
-//                    std::cout << var_set_old.size() << "\n";
+                    std::cout << var_set_old.size() << "\n";
 
                     itcount = 0;
                     for(auto it = var_set_new.begin(),end = var_set_new.end(); it != end; ++it){
                         new_to_index.insert(std::make_pair(*it,itcount)); 
-//                        std::cout << itcount << " " << *it << ' ';
+                        std::cout << itcount << " " << *it << ' ';
                         itcount++;
                     }
-//                    std::cout<< var_set_new.size()  << "\n";
+                    std::cout<< var_set_new.size()  << "\n";
                     first = false;
                 }
 
@@ -545,7 +545,7 @@ tabled_lookup (unsigned char var, unsigned char exponent, unsigned int iteration
 
         case 13:{
                       return std::vector<monomial_x>({
-                     monomial_x(&emptyvect,vars,NONE,12,1,0),
+                     monomial_x(&emptyvect,vars,NONE,13,1,0),
                    monomial_x(xvars,vars,1,12,13%p,1),
                    monomial_x(xvars,vars,2,11,78%p,2),
                    monomial_x(xvars,vars,3,10,286%p,3),
@@ -564,7 +564,7 @@ tabled_lookup (unsigned char var, unsigned char exponent, unsigned int iteration
 
         case 14:{
                       return std::vector<monomial_x>({
-                     monomial_x(&emptyvect,vars,NONE,12,1,0),
+                     monomial_x(&emptyvect,vars,NONE,14,1,0),
                    monomial_x(xvars,vars,1,13,14%p,1),
                    monomial_x(xvars,vars,2,12,91%p,2),
                    monomial_x(xvars,vars,3,11,364%p,3),
@@ -582,9 +582,473 @@ tabled_lookup (unsigned char var, unsigned char exponent, unsigned int iteration
                   });
               }
 
+        case 15:{
+                      return std::vector<monomial_x>({
+                     monomial_x(&emptyvect,vars,NONE,15,1,0),
+                   monomial_x(xvars,vars,1,14,15%p,1),
+                   monomial_x(xvars,vars,2,13,105%p,2),
+                   monomial_x(xvars,vars,3,12,455%p,3),
+                   monomial_x(xvars,vars,4,11,1365%p,4),
+                   monomial_x(xvars,vars,5,10,3003%p,5),
+                   monomial_x(xvars,vars,6,9,5005%p,6),
+                   monomial_x(xvars,vars,7,8,6435%p,7),
+                   monomial_x(xvars,vars,8,7,6435%p,8),
+                   monomial_x(xvars,vars,9,6,5005%p,9),
+                   monomial_x(xvars,vars,10,5,3003%p,10),
+                   monomial_x(xvars,vars,11,4,1365%p,11),
+                   monomial_x(xvars,vars,12,3,455%p,12),
+                   monomial_x(xvars,vars,13,2,105%p,13),
+                   monomial_x(xvars,vars,14,1,15%p,14),
+                   monomial_x(xvars,&emptyvect,15,NONE,1,15)
+                  });
+              }
+
+        case 16:{
+                      return std::vector<monomial_x>({
+                     monomial_x(&emptyvect,vars,NONE,16,1,0),
+                   monomial_x(xvars,vars,1,15,16%p,1),
+                   monomial_x(xvars,vars,2,14,120%p,2),
+                   monomial_x(xvars,vars,3,13,560%p,3),
+                   monomial_x(xvars,vars,4,12,1820%p,4),
+                   monomial_x(xvars,vars,5,11,4368%p,5),
+                   monomial_x(xvars,vars,6,10,8008%p,6),
+                   monomial_x(xvars,vars,7,9,11440%p,7),
+                   monomial_x(xvars,vars,8,8,12870%p,8),
+                   monomial_x(xvars,vars,9,7,11440%p,9),
+                   monomial_x(xvars,vars,10,6,8008%p,10),
+                   monomial_x(xvars,vars,11,5,4368%p,11),
+                   monomial_x(xvars,vars,12,4,1820%p,12),
+                   monomial_x(xvars,vars,13,3,560%p,13),
+                   monomial_x(xvars,vars,14,2,120%p,14),
+                   monomial_x(xvars,vars,15,1,16%p,15),
+                   monomial_x(xvars,&emptyvect,16,NONE,1,16)
+                  });
+              }
+
+        case 17:{
+                      return std::vector<monomial_x>({
+                     monomial_x(&emptyvect,vars,NONE,17,1,0),
+                   monomial_x(xvars,vars,1,16,17%p,1),
+                   monomial_x(xvars,vars,2,15,136%p,2),
+                   monomial_x(xvars,vars,3,14,680%p,3),
+                   monomial_x(xvars,vars,4,13,2380%p,4),
+                   monomial_x(xvars,vars,5,12,6188%p,5),
+                   monomial_x(xvars,vars,6,11,12376%p,6),
+                   monomial_x(xvars,vars,7,10,19448%p,7),
+                   monomial_x(xvars,vars,8,9,24310%p,8),
+                   monomial_x(xvars,vars,9,8,24310%p,9),
+                   monomial_x(xvars,vars,10,7,19448%p,10),
+                   monomial_x(xvars,vars,11,6,12376%p,11),
+                   monomial_x(xvars,vars,12,5,6188%p,12),
+                   monomial_x(xvars,vars,13,4,2380%p,13),
+                   monomial_x(xvars,vars,14,3,680%p,14),
+                   monomial_x(xvars,vars,15,2,136%p,15),
+                   monomial_x(xvars,vars,16,1,17%p,16),
+                   monomial_x(xvars,&emptyvect,17,NONE,1,17)
+                  });
+              }
+
+        case 18:{
+                      return std::vector<monomial_x>({
+                     monomial_x(&emptyvect,vars,NONE,18,1,0),
+                   monomial_x(xvars,vars,1,17,18%p,1),
+                   monomial_x(xvars,vars,2,16,153%p,2),
+                   monomial_x(xvars,vars,3,15,816%p,3),
+                   monomial_x(xvars,vars,4,14,3060%p,4),
+                   monomial_x(xvars,vars,5,13,8568%p,5),
+                   monomial_x(xvars,vars,6,12,18564%p,6),
+                   monomial_x(xvars,vars,7,11,31824%p,7),
+                   monomial_x(xvars,vars,8,10,43758%p,8),
+                   monomial_x(xvars,vars,9,9,48620%p,9),
+                   monomial_x(xvars,vars,10,8,43758%p,10),
+                   monomial_x(xvars,vars,11,7,31824%p,11),
+                   monomial_x(xvars,vars,12,6,18564%p,12),
+                   monomial_x(xvars,vars,13,5,8568%p,13),
+                   monomial_x(xvars,vars,14,4,3060%p,14),
+                   monomial_x(xvars,vars,15,3,816%p,15),
+                   monomial_x(xvars,vars,16,2,153%p,16),
+                   monomial_x(xvars,vars,17,1,18%p,17),
+                   monomial_x(xvars,&emptyvect,18,NONE,1,18)
+                  });
+              }
+
+        case 19:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,19,1,0),
+    monomial_x(xvars,vars,1,18,19%p,1),
+    monomial_x(xvars,vars,2,17,171%p,2),
+    monomial_x(xvars,vars,3,16,969%p,3),
+    monomial_x(xvars,vars,4,15,3876%p,4),
+    monomial_x(xvars,vars,5,14,11628%p,5),
+    monomial_x(xvars,vars,6,13,27132%p,6),
+    monomial_x(xvars,vars,7,12,50388%p,7),
+    monomial_x(xvars,vars,8,11,75582%p,8),
+    monomial_x(xvars,vars,9,10,92378%p,9),
+    monomial_x(xvars,vars,10,9,92378%p,10),
+    monomial_x(xvars,vars,11,8,75582%p,11),
+    monomial_x(xvars,vars,12,7,50388%p,12),
+    monomial_x(xvars,vars,13,6,27132%p,13),
+    monomial_x(xvars,vars,14,5,11628%p,14),
+    monomial_x(xvars,vars,15,4,3876%p,15),
+    monomial_x(xvars,vars,16,3,969%p,16),
+    monomial_x(xvars,vars,17,2,171%p,17),
+    monomial_x(xvars,vars,18,1,19%p,18),
+    monomial_x(xvars,&emptyvect,19,NONE,1,19)
+
+                            });
+                }
+
+         case 20:{
+                    return std::vector<monomial_x>({ 
+    monomial_x(&emptyvect,vars,NONE,20,1,0),
+    monomial_x(xvars,vars,1,19,20%p,1),
+    monomial_x(xvars,vars,2,18,190%p,2),
+    monomial_x(xvars,vars,3,17,1140%p,3),
+    monomial_x(xvars,vars,4,16,4845%p,4),
+    monomial_x(xvars,vars,5,15,15504%p,5),
+    monomial_x(xvars,vars,6,14,38760%p,6),
+    monomial_x(xvars,vars,7,13,77520%p,7),
+    monomial_x(xvars,vars,8,12,125970%p,8),
+    monomial_x(xvars,vars,9,11,167960%p,9),
+    monomial_x(xvars,vars,10,10,184756%p,10),
+    monomial_x(xvars,vars,11,9,167960%p,11),
+    monomial_x(xvars,vars,12,8,125970%p,12),
+    monomial_x(xvars,vars,13,7,77520%p,13),
+    monomial_x(xvars,vars,14,6,38760%p,14),
+    monomial_x(xvars,vars,15,5,15504%p,15),
+    monomial_x(xvars,vars,16,4,4845%p,16),
+    monomial_x(xvars,vars,17,3,1140%p,17),
+    monomial_x(xvars,vars,18,2,190%p,18),
+    monomial_x(xvars,vars,19,1,20%p,19),
+    monomial_x(xvars,&emptyvect,20,NONE,1,20)
+                                       });
+                 }
+
+                     case 21:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,21,1,0),
+    monomial_x(xvars,vars,1,20,21%p,1),
+    monomial_x(xvars,vars,2,19,210%p,2),
+    monomial_x(xvars,vars,3,18,1330%p,3),
+    monomial_x(xvars,vars,4,17,5985%p,4),
+    monomial_x(xvars,vars,5,16,20349%p,5),
+    monomial_x(xvars,vars,6,15,54264%p,6),
+    monomial_x(xvars,vars,7,14,116280%p,7),
+    monomial_x(xvars,vars,8,13,203490%p,8),
+    monomial_x(xvars,vars,9,12,293930%p,9),
+    monomial_x(xvars,vars,10,11,352716%p,10),
+    monomial_x(xvars,vars,11,10,352716%p,11),
+    monomial_x(xvars,vars,12,9,293930%p,12),
+    monomial_x(xvars,vars,13,8,203490%p,13),
+    monomial_x(xvars,vars,14,7,116280%p,14),
+    monomial_x(xvars,vars,15,6,54264%p,15),
+    monomial_x(xvars,vars,16,5,20349%p,16),
+    monomial_x(xvars,vars,17,4,5985%p,17),
+    monomial_x(xvars,vars,18,3,1330%p,18),
+    monomial_x(xvars,vars,19,2,210%p,19),
+    monomial_x(xvars,vars,20,1,21%p,20),
+    monomial_x(xvars,&emptyvect,21,NONE,1,21)
+
+                             });
+                     }
+                     case 22:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,22,1,0),
+    monomial_x(xvars,vars,1,21,22%p,1),
+    monomial_x(xvars,vars,2,20,231%p,2),
+    monomial_x(xvars,vars,3,19,1540%p,3),
+    monomial_x(xvars,vars,4,18,7315%p,4),
+    monomial_x(xvars,vars,5,17,26334%p,5),
+    monomial_x(xvars,vars,6,16,74613%p,6),
+    monomial_x(xvars,vars,7,15,170544%p,7),
+    monomial_x(xvars,vars,8,14,319770%p,8),
+    monomial_x(xvars,vars,9,13,497420%p,9),
+    monomial_x(xvars,vars,10,12,646646%p,10),
+    monomial_x(xvars,vars,11,11,705432%p,11),
+    monomial_x(xvars,vars,12,10,646646%p,12),
+    monomial_x(xvars,vars,13,9,497420%p,13),
+    monomial_x(xvars,vars,14,8,319770%p,14),
+    monomial_x(xvars,vars,15,7,170544%p,15),
+    monomial_x(xvars,vars,16,6,74613%p,16),
+    monomial_x(xvars,vars,17,5,26334%p,17),
+    monomial_x(xvars,vars,18,4,7315%p,18),
+    monomial_x(xvars,vars,19,3,1540%p,19),
+    monomial_x(xvars,vars,20,2,231%p,20),
+    monomial_x(xvars,vars,21,1,22%p,21),
+    monomial_x(xvars,&emptyvect,22,NONE,1,22)
+
+                             });
+                             }
+
+                     case 23:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,23,1,0),
+    monomial_x(xvars,vars,1,22,23%p,1),
+    monomial_x(xvars,vars,2,21,253%p,2),
+    monomial_x(xvars,vars,3,20,1771%p,3),
+    monomial_x(xvars,vars,4,19,8855%p,4),
+    monomial_x(xvars,vars,5,18,33649%p,5),
+    monomial_x(xvars,vars,6,17,100947%p,6),
+    monomial_x(xvars,vars,7,16,245157%p,7),
+    monomial_x(xvars,vars,8,15,490314%p,8),
+    monomial_x(xvars,vars,9,14,817190%p,9),
+    monomial_x(xvars,vars,10,13,1144066%p,10),
+    monomial_x(xvars,vars,11,12,1352078%p,11),
+    monomial_x(xvars,vars,12,11,1352078%p,12),
+    monomial_x(xvars,vars,13,10,1144066%p,13),
+    monomial_x(xvars,vars,14,9,817190%p,14),
+    monomial_x(xvars,vars,15,8,490314%p,15),
+    monomial_x(xvars,vars,16,7,245157%p,16),
+    monomial_x(xvars,vars,17,6,100947%p,17),
+    monomial_x(xvars,vars,18,5,33649%p,18),
+    monomial_x(xvars,vars,19,4,8855%p,19),
+    monomial_x(xvars,vars,20,3,1771%p,20),
+    monomial_x(xvars,vars,21,2,253%p,21),
+    monomial_x(xvars,vars,22,1,23%p,22),
+    monomial_x(xvars,&emptyvect,23,NONE,1,23)
+
+                             });
+             }
+
+                     case 24:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,24,1,0),
+    monomial_x(xvars,vars,1,23,24%p,1),
+    monomial_x(xvars,vars,2,22,276%p,2),
+    monomial_x(xvars,vars,3,21,2024%p,3),
+    monomial_x(xvars,vars,4,20,10626%p,4),
+    monomial_x(xvars,vars,5,19,42504%p,5),
+    monomial_x(xvars,vars,6,18,134596%p,6),
+    monomial_x(xvars,vars,7,17,346104%p,7),
+    monomial_x(xvars,vars,8,16,735471%p,8),
+    monomial_x(xvars,vars,9,15,1307504%p,9),
+    monomial_x(xvars,vars,10,14,1961256%p,10),
+    monomial_x(xvars,vars,11,13,2496144%p,11),
+    monomial_x(xvars,vars,12,12,2704156%p,12),
+    monomial_x(xvars,vars,13,11,2496144%p,13),
+    monomial_x(xvars,vars,14,10,1961256%p,14),
+    monomial_x(xvars,vars,15,9,1307504%p,15),
+    monomial_x(xvars,vars,16,8,735471%p,16),
+    monomial_x(xvars,vars,17,7,346104%p,17),
+    monomial_x(xvars,vars,18,6,134596%p,18),
+    monomial_x(xvars,vars,19,5,42504%p,19),
+    monomial_x(xvars,vars,20,4,10626%p,20),
+    monomial_x(xvars,vars,21,3,2024%p,21),
+    monomial_x(xvars,vars,22,2,276%p,22),
+    monomial_x(xvars,vars,23,1,24%p,23),
+    monomial_x(xvars,&emptyvect,24,NONE,1,24)
+
+                             });
+             }
+
+                     case 25:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,25,1,0),
+    monomial_x(xvars,vars,1,24,25%p,1),
+    monomial_x(xvars,vars,2,23,300%p,2),
+    monomial_x(xvars,vars,3,22,2300%p,3),
+    monomial_x(xvars,vars,4,21,12650%p,4),
+    monomial_x(xvars,vars,5,20,53130%p,5),
+    monomial_x(xvars,vars,6,19,177100%p,6),
+    monomial_x(xvars,vars,7,18,480700%p,7),
+    monomial_x(xvars,vars,8,17,1081575%p,8),
+    monomial_x(xvars,vars,9,16,2042975%p,9),
+    monomial_x(xvars,vars,10,15,3268760%p,10),
+    monomial_x(xvars,vars,11,14,4457400%p,11),
+    monomial_x(xvars,vars,12,13,5200300%p,12),
+    monomial_x(xvars,vars,13,12,5200300%p,13),
+    monomial_x(xvars,vars,14,11,4457400%p,14),
+    monomial_x(xvars,vars,15,10,3268760%p,15),
+    monomial_x(xvars,vars,16,9,2042975%p,16),
+    monomial_x(xvars,vars,17,8,1081575%p,17),
+    monomial_x(xvars,vars,18,7,480700%p,18),
+    monomial_x(xvars,vars,19,6,177100%p,19),
+    monomial_x(xvars,vars,20,5,53130%p,20),
+    monomial_x(xvars,vars,21,4,12650%p,21),
+    monomial_x(xvars,vars,22,3,2300%p,22),
+    monomial_x(xvars,vars,23,2,300%p,23),
+    monomial_x(xvars,vars,24,1,25%p,24),
+    monomial_x(xvars,&emptyvect,25,NONE,1,25)
+
+                             });
+             }
+
+                     case 26:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,26,1,0),
+    monomial_x(xvars,vars,1,25,26%p,1),
+    monomial_x(xvars,vars,2,24,325%p,2),
+    monomial_x(xvars,vars,3,23,2600%p,3),
+    monomial_x(xvars,vars,4,22,14950%p,4),
+    monomial_x(xvars,vars,5,21,65780%p,5),
+    monomial_x(xvars,vars,6,20,230230%p,6),
+    monomial_x(xvars,vars,7,19,657800%p,7),
+    monomial_x(xvars,vars,8,18,1562275%p,8),
+    monomial_x(xvars,vars,9,17,3124550%p,9),
+    monomial_x(xvars,vars,10,16,5311735%p,10),
+    monomial_x(xvars,vars,11,15,7726160%p,11),
+    monomial_x(xvars,vars,12,14,9657700%p,12),
+    monomial_x(xvars,vars,13,13,10400600%p,13),
+    monomial_x(xvars,vars,14,12,9657700%p,14),
+    monomial_x(xvars,vars,15,11,7726160%p,15),
+    monomial_x(xvars,vars,16,10,5311735%p,16),
+    monomial_x(xvars,vars,17,9,3124550%p,17),
+    monomial_x(xvars,vars,18,8,1562275%p,18),
+    monomial_x(xvars,vars,19,7,657800%p,19),
+    monomial_x(xvars,vars,20,6,230230%p,20),
+    monomial_x(xvars,vars,21,5,65780%p,21),
+    monomial_x(xvars,vars,22,4,14950%p,22),
+    monomial_x(xvars,vars,23,3,2600%p,23),
+    monomial_x(xvars,vars,24,2,325%p,24),
+    monomial_x(xvars,vars,25,1,26%p,25),
+    monomial_x(xvars,&emptyvect,26,NONE,1,26)
+
+                             });
+             }
+
+                     case 27:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,27,1,0),
+    monomial_x(xvars,vars,1,26,27%p,1),
+    monomial_x(xvars,vars,2,25,351%p,2),
+    monomial_x(xvars,vars,3,24,2925%p,3),
+    monomial_x(xvars,vars,4,23,17550%p,4),
+    monomial_x(xvars,vars,5,22,80730%p,5),
+    monomial_x(xvars,vars,6,21,296010%p,6),
+    monomial_x(xvars,vars,7,20,888030%p,7),
+    monomial_x(xvars,vars,8,19,2220075%p,8),
+    monomial_x(xvars,vars,9,18,4686825%p,9),
+    monomial_x(xvars,vars,10,17,8436285%p,10),
+    monomial_x(xvars,vars,11,16,13037895%p,11),
+    monomial_x(xvars,vars,12,15,17383860%p,12),
+    monomial_x(xvars,vars,13,14,20058300%p,13),
+    monomial_x(xvars,vars,14,13,20058300%p,14),
+    monomial_x(xvars,vars,15,12,17383860%p,15),
+    monomial_x(xvars,vars,16,11,13037895%p,16),
+    monomial_x(xvars,vars,17,10,8436285%p,17),
+    monomial_x(xvars,vars,18,9,4686825%p,18),
+    monomial_x(xvars,vars,19,8,2220075%p,19),
+    monomial_x(xvars,vars,20,7,888030%p,20),
+    monomial_x(xvars,vars,21,6,296010%p,21),
+    monomial_x(xvars,vars,22,5,80730%p,22),
+    monomial_x(xvars,vars,23,4,17550%p,23),
+    monomial_x(xvars,vars,24,3,2925%p,24),
+    monomial_x(xvars,vars,25,2,351%p,25),
+    monomial_x(xvars,vars,26,1,27%p,26),
+    monomial_x(xvars,&emptyvect,27,NONE,1,27)
+
+                             });
+             }
+                     case 28:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,28,1,0),
+    monomial_x(xvars,vars,1,27,28%p,1),
+    monomial_x(xvars,vars,2,26,378%p,2),
+    monomial_x(xvars,vars,3,25,3276%p,3),
+    monomial_x(xvars,vars,4,24,20475%p,4),
+    monomial_x(xvars,vars,5,23,98280%p,5),
+    monomial_x(xvars,vars,6,22,376740%p,6),
+    monomial_x(xvars,vars,7,21,1184040%p,7),
+    monomial_x(xvars,vars,8,20,3108105%p,8),
+    monomial_x(xvars,vars,9,19,6906900%p,9),
+    monomial_x(xvars,vars,10,18,13123110%p,10),
+    monomial_x(xvars,vars,11,17,21474180%p,11),
+    monomial_x(xvars,vars,12,16,30421755%p,12),
+    monomial_x(xvars,vars,13,15,37442160%p,13),
+    monomial_x(xvars,vars,14,14,40116600%p,14),
+    monomial_x(xvars,vars,15,13,37442160%p,15),
+    monomial_x(xvars,vars,16,12,30421755%p,16),
+    monomial_x(xvars,vars,17,11,21474180%p,17),
+    monomial_x(xvars,vars,18,10,13123110%p,18),
+    monomial_x(xvars,vars,19,9,6906900%p,19),
+    monomial_x(xvars,vars,20,8,3108105%p,20),
+    monomial_x(xvars,vars,21,7,1184040%p,21),
+    monomial_x(xvars,vars,22,6,376740%p,22),
+    monomial_x(xvars,vars,23,5,98280%p,23),
+    monomial_x(xvars,vars,24,4,20475%p,24),
+    monomial_x(xvars,vars,25,3,3276%p,25),
+    monomial_x(xvars,vars,26,2,378%p,26),
+    monomial_x(xvars,vars,27,1,28%p,27),
+    monomial_x(xvars,&emptyvect,28,NONE,1,28),
+
+                             });
+             }
+
+                     case 29:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,29,1,0),
+    monomial_x(xvars,vars,1,28,29%p,1),
+    monomial_x(xvars,vars,2,27,406%p,2),
+    monomial_x(xvars,vars,3,26,3654%p,3),
+    monomial_x(xvars,vars,4,25,23751%p,4),
+    monomial_x(xvars,vars,5,24,118755%p,5),
+    monomial_x(xvars,vars,6,23,475020%p,6),
+    monomial_x(xvars,vars,7,22,1560780%p,7),
+    monomial_x(xvars,vars,8,21,4292145%p,8),
+    monomial_x(xvars,vars,9,20,10015005%p,9),
+    monomial_x(xvars,vars,10,19,20030010%p,10),
+    monomial_x(xvars,vars,11,18,34597290%p,11),
+    monomial_x(xvars,vars,12,17,51895935%p,12),
+    monomial_x(xvars,vars,13,16,67863915%p,13),
+    monomial_x(xvars,vars,14,15,77558760%p,14),
+    monomial_x(xvars,vars,15,14,77558760%p,15),
+    monomial_x(xvars,vars,16,13,67863915%p,16),
+    monomial_x(xvars,vars,17,12,51895935%p,17),
+    monomial_x(xvars,vars,18,11,34597290%p,18),
+    monomial_x(xvars,vars,19,10,20030010%p,19),
+    monomial_x(xvars,vars,20,9,10015005%p,20),
+    monomial_x(xvars,vars,21,8,4292145%p,21),
+    monomial_x(xvars,vars,22,7,1560780%p,22),
+    monomial_x(xvars,vars,23,6,475020%p,23),
+    monomial_x(xvars,vars,24,5,118755%p,24),
+    monomial_x(xvars,vars,25,4,23751%p,25),
+    monomial_x(xvars,vars,26,3,3654%p,26),
+    monomial_x(xvars,vars,27,2,406%p,27),
+    monomial_x(xvars,vars,28,1,29%p,28),
+    monomial_x(xvars,&emptyvect,29,NONE,1,29),
+
+                             });
+             }
+                     case 30:{
+                    return std::vector<monomial_x>({ 
+monomial_x(&emptyvect,vars,NONE,30,1,0),
+    monomial_x(xvars,vars,1,29,30%p,1),
+    monomial_x(xvars,vars,2,28,435%p,2),
+    monomial_x(xvars,vars,3,27,4060%p,3),
+    monomial_x(xvars,vars,4,26,27405%p,4),
+    monomial_x(xvars,vars,5,25,142506%p,5),
+    monomial_x(xvars,vars,6,24,593775%p,6),
+    monomial_x(xvars,vars,7,23,2035800%p,7),
+    monomial_x(xvars,vars,8,22,5852925%p,8),
+    monomial_x(xvars,vars,9,21,14307150%p,9),
+    monomial_x(xvars,vars,10,20,30045015%p,10),
+    monomial_x(xvars,vars,11,19,54627300%p,11),
+    monomial_x(xvars,vars,12,18,86493225%p,12),
+    monomial_x(xvars,vars,13,17,119759850%p,13),
+    monomial_x(xvars,vars,14,16,145422675%p,14),
+    monomial_x(xvars,vars,15,15,155117520%p,15),
+    monomial_x(xvars,vars,16,14,145422675%p,16),
+    monomial_x(xvars,vars,17,13,119759850%p,17),
+    monomial_x(xvars,vars,18,12,86493225%p,18),
+    monomial_x(xvars,vars,19,11,54627300%p,19),
+    monomial_x(xvars,vars,20,10,30045015%p,20),
+    monomial_x(xvars,vars,21,9,14307150%p,21),
+    monomial_x(xvars,vars,22,8,5852925%p,22),
+    monomial_x(xvars,vars,23,7,2035800%p,23),
+    monomial_x(xvars,vars,24,6,593775%p,24),
+    monomial_x(xvars,vars,25,5,142506%p,25),
+    monomial_x(xvars,vars,26,4,27405%p,26),
+    monomial_x(xvars,vars,27,3,4060%p,27),
+    monomial_x(xvars,vars,28,2,435%p,28),
+    monomial_x(xvars,vars,29,1,30%p,29),
+    monomial_x(xvars,&emptyvect,30,NONE,1,30),
+
+                             });
+             }
+
         default:{
                     //TODO
-                    std::cout << int(exponent) << " shouldn't reach here, exponent > 5\n ";
+                    std::cout << int(exponent) << " shouldn't reach here, exponent\n ";
                     exit(0);
                 }
 
@@ -607,8 +1071,8 @@ obtain_multiplicands (
 
     for(unsigned int k = iteration + 1,end = to_mult.size(); k < end; k++){
         if(to_mult[k].size() != 1){
-//            max_weight_add += to_mult[k].begin()->exponent; 
-            max_weight_add += to_mult[k].size() - 1; 
+            max_weight_add += to_mult[k].back().exponent; 
+//            max_weight_add += to_mult[k].size() - 1; 
         }
 
         else{
@@ -634,7 +1098,9 @@ obtain_multiplicands (
 
         mono_x_node* possible_child = new mono_x_node(&to_mult[iteration][i]);
 
+        std::cerr << *possible_child->mon_ptr << '\n';
         if(obtain_multiplicands(possible_child, current_weight + to_mult[iteration][i].exponent, to_mult, iteration + 1)){
+            std::cerr << "success " << *possible_child->mon_ptr << '\n';
             parent->children.push_back(possible_child);
             bad = false;
         }
@@ -714,7 +1180,7 @@ int main (int argc, char** argv){
     std::string recipe_name = std::string(argv[1]);
 
     std::ofstream c2_outfile("c2.txt", std::ofstream::out | std::ofstream::app);
-    c2_outfile << recipe_name << '\n';
+    c2_outfile << '\n' << recipe_name << '\n' << "c2seq = ";
     c2_outfile.close();
 
     process_recipe(sub_maps,size_map,recipe_name);
@@ -733,7 +1199,7 @@ int main (int argc, char** argv){
 //        }
 //    }
 
-    std::set<unsigned short> primes = {11,13};
+    std::set<unsigned short> primes = {2,3,5,7,11,13,17};
     for(auto it = primes.begin(); it!= primes.end(); ++it){
         p = *it;
         vect_mono start;
@@ -768,6 +1234,8 @@ int main (int argc, char** argv){
                         to_mult.push_back(tabled_lookup(elt->first,elt->second,iter));
                     }
 
+                    std::cerr << to_mult.size() << '\n';
+                    std::cerr << to_mult.begin()->size() << '\n';
                     std::sort (to_mult.begin(), to_mult.end(), sort_function);
                     mono_x_node parent;
                     obtain_multiplicands(&parent,0,to_mult,0);
@@ -803,7 +1271,10 @@ int main (int argc, char** argv){
                         temp[monomial->first] %= p;
                     }
                 }
+                toadd[i].clear();
             }
+
+            
 
             actual_poly.reserve(temp.size());
             for(auto monomial = temp.begin(), end = temp.end(); monomial != end; ++monomial){
@@ -825,7 +1296,21 @@ int main (int argc, char** argv){
         }
 
         std::ofstream c2_outfile("c2.txt", std::ofstream::out | std::ofstream::app);
-        c2_outfile << "prime " << p <<  " " << actual_poly[0].second % p << '\n';
+        if(actual_poly.size() == 0){
+//            c2_outfile << "prime " << (int)p <<  ", " << 0 << '\n';
+            c2_outfile << 0 << ",";;
+        }
+        else{
+            int c2;
+            if(actual_poly[0].second < 0){
+                c2 = actual_poly[0].second += p;
+            }
+            else{
+                c2 = actual_poly[0].second;
+            }
+//            c2_outfile << "prime " << (int)p <<  "," << c2 << '\n';
+                c2_outfile << c2 << ",";
+        }
         c2_outfile.close();
 
         for(auto thing : actual_poly){
