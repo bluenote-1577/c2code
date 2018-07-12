@@ -1,0 +1,66 @@
+
+recipes_5/factor_recipe_1105.0-Period[11,7367]
+c2seq = 0,2,4,3,8,
+recipes_5/factor_recipe_1140.0-Period[11,8463]
+c2seq = 1,0,2,1,4,
+recipes_5/factor_recipe_1464.0-Period[11,7238]
+c2seq = 0,1,1,0,2,
+recipes_5/factor_recipe_1479.0-Period[11,7810]
+c2seq = 0,2,1,6,5,
+recipes_5/factor_recipe_1480.0-Period[11,7082]
+c2seq = 0,1,0,6,5,
+recipes_5/factor_recipe_1596.0-Period[11,7252]
+c2seq = 1,2,4,1,3,
+recipes_5/factor_recipe_1606.0-Period[11,8182]
+c2seq = 1,1,2,2,9,
+recipes_5/factor_recipe_1638.0-Period[11,8032]
+c2seq = 0,1,2,6,8,
+recipes_5/factor_recipe_1638.0-Period[11,8453]
+c2seq = 0,0,1,5,1,
+recipes_5/factor_recipe_1694.0-Period[11,7106]
+c2seq = 0,0,4,3,2,
+recipes_5/factor_recipe_1727.0-Period[11,8188]
+c2seq = 1,0,4,2,0,
+recipes_5/factor_recipe_1728.0-Period[11,7802]
+c2seq = 1,0,2,6,7,
+recipes_5/factor_recipe_1728.0-Period[11,8335]
+c2seq = 0,0,0,3,9,
+recipes_5/factor_recipe_1880.0-Period[11,7606]
+c2seq = 0,0,0,4,5,
+recipes_5/factor_recipe_1936.0-Period[11,8181]
+c2seq = 0,1,2,2,0,
+recipes_5/factor_recipe_1980.0-Period[11,6969]
+c2seq = 1,1,3,6,2,
+recipes_5/factor_recipe_2016.0-Period[11,7729]
+c2seq = 0,2,0,0,6,
+recipes_5/factor_recipe_2052.0-Period[11,7708]
+c2seq = 1,0,1,5,9,
+recipes_5/factor_recipe_2068.0-Period[11,8524]
+c2seq = 0,1,4,0,0,
+recipes_5/factor_recipe_2070.0-Period[11,7100]
+c2seq = 0,2,3,3,6,
+recipes_5/factor_recipe_2100.0-Period[11,8194]
+c2seq = 0,1,2,1,8,
+recipes_5/factor_recipe_2100.0-Period[11,8439]
+c2seq = 0,0,1,1,2,
+recipes_5/factor_recipe_2112.0-Period[11,7509]
+c2seq = 1,1,0,4,1,
+recipes_5/factor_recipe_2140.0-Period[11,8203]
+c2seq = 1,2,3,6,6,
+recipes_5/factor_recipe_2140.0-Period[11,8205]
+c2seq = 0,0,0,0,0,
+recipes_5/factor_recipe_2148.0-Period[11,8443]
+c2seq = 0,2,0,0,4,
+recipes_5/factor_recipe_2247.0-Period[11,8376]
+c2seq = 0,1,2,0,6,
+
+recipes_5/factor_recipe_2268.0-Period[11,8367]
+c2seq = 0,1,4,0,10,
+recipes_5/factor_recipe_2310.0-Period[11,7254]
+c2seq = 0,1,0,0,9,
+recipes_5/factor_recipe_2360.0-Period[11,7409]
+c2seq = 0,1,2,5,4,
+recipes_5/factor_recipe_2360.0-Period[11,7638]
+c2seq = 1,2,1,0,10,
+recipes_5/factor_recipe_2376.0-Period[11,7021]
+c2seq = 0,0,2,5,

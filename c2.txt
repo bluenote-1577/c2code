@@ -1,0 +1,1719 @@
+recipes/factor_recipe_144.0-Period[11,7073]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_160.0-Period[11,7072]
+c2seq = 0,2,2,5,6,
+recipes/factor_recipe_171.0-Period[11,6997]
+c2seq = 0,0,0,2,0,
+recipes/factor_recipe_204.0-Period[11,6957]
+c2seq = 0,2,1,6,10,
+recipes/factor_recipe_207.0-Period[11,6992]
+c2seq = 0,1,4,4,5,
+recipes/factor_recipe_238.0-Period[11,7074]
+c2seq = 0,2,2,5,6,
+recipes/factor_recipe_252.0-Period[11,6959]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_252.0-Period[11,6991]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_319.0-Period[11,7047]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_324.0-Period[11,7020]
+c2seq = 0,1,2,4,4,
+recipes/factor_recipe_336.0-Period[11,7018]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_360.0-Period[11,7061] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_377.0-Period[11,7048]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_390.0-Period[11,6958]
+c2seq = 0,1,4,4,5,
+recipes/factor_recipe_396.0-Period[11,6996]
+c2seq = 1,1,4,4,5,
+recipes/factor_recipe_406.0-Period[11,7046]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_432.0-Period[11,7044]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_435.0-Period[11,7050]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_465.0-Period[11,6993]
+c2seq = 0,0,0,2,0,
+recipes/factor_recipe_476.0-Period[11,7031]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_504.0-Period[11,6998]
+c2seq = 1,1,3,4,2,
+recipes/factor_recipe_510.0-Period[11,6977]
+c2seq = 0,1,3,4,8,
+recipes/factor_recipe_518.0-Period[11,7060]
+c2seq = 0,2,2,2,6,
+recipes/factor_recipe_570.0-Period[11,6978]
+c2seq = 1,0,1,2,8,
+recipes/factor_recipe_570.0-Period[11,7065]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_592.0-Period[11,6995]
+c2seq = 1,1,4,4,5,
+recipes/factor_recipe_600.0-Period[11,6999]
+c2seq = 1,1,2,6,7,
+recipes/factor_recipe_624.0-Period[11,6972]
+c2seq = 0,1,3,4,8,
+recipes/factor_recipe_624.0-Period[11,7032]
+c2seq = 0,1,2,4,4,
+recipes/factor_recipe_656.0-Period[11,7059]
+c2seq = 1,0,0,1,9,
+recipes/factor_recipe_656.0-Period[11,7066]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_656.0-Period[11,7070]
+c2seq = 0,2,2,4,1,
+recipes/factor_recipe_672.0-Period[11,7043]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_696.0-Period[11,7045]
+c2seq = 1,1,0,2,0,
+recipes/factor_recipe_714.0-Period[11,7109]
+c2seq = 0,0,3,5,3,
+recipes/factor_recipe_738.0-Period[11,7068]
+c2seq = 1,0,1,0,4,
+recipes/factor_recipe_756.0-Period[11,6973]
+c2seq = 1,0,1,2,8,
+recipes/factor_recipe_756.0-Period[11,6994]
+c2seq = 1,1,2,6,7,
+recipes/factor_recipe_779.0-Period[11,7069]
+c2seq = 0,0,2,1,7,
+recipes/factor_recipe_784.0-Period[11,7002]
+c2seq = 0,2,3,3,0,
+recipes/factor_recipe_784.0-Period[11,7014]
+c2seq = 1,1,1,1,1,
+recipes/factor_recipe_784.0-Period[11,7019]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_792.0-Period[11,7026]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_792.0-Period[11,7077]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_798.0-Period[11,7064]
+c2seq = 0,1,1,3,2,
+recipes/factor_recipe_810.0-Period[11,6980]
+c2seq = 0,2,2,2,6,
+recipes/factor_recipe_810.0-Period[11,7023]
+c2seq = 0,1,0,4,5,
+recipes/factor_recipe_816.0-Period[11,7067]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_855.0-Period[11,6989]
+c2seq = 1,0,0,1,9,
+recipes/factor_recipe_864.0-Period[11,7033]
+c2seq = 0,0,2,5,9,
+recipes/factor_recipe_864.0-Period[11,7062]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_884.0-Period[11,7108]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_900.0-Period[11,7053]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_918.0-Period[11,7040]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_924.0-Period[11,7027]
+c2seq = 1,0,3,4,7,
+recipes/factor_recipe_950.0-Period[11,7035]
+c2seq = 0,1,3,3,3,
+recipes/factor_recipe_969.0-Period[11,6981]
+c2seq = 0,1,1,3,2,
+recipes/factor_recipe_988.0-Period[11,6961]
+c2seq = 0,2,2,5,6,
+recipes/factor_recipe_1020.0-Period[11,7006]
+c2seq = 0,1,0,5,4,
+recipes/factor_recipe_1029.0-Period[11,7037]
+c2seq = 1,2,3,2,7,
+recipes/factor_recipe_1054.0-Period[11,7042]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_1071.0-Period[11,7054]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_1092.0-Period[11,7036]
+c2seq = 0,1,4,0,6,
+recipes/factor_recipe_1102.0-Period[11,7007]
+c2seq = 0,0,0,2,0,
+recipes/factor_recipe_1122.0-Period[11,6964]
+c2seq = 1,0,3,4,7,
+recipes/factor_recipe_1152.0-Period[11,6962]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_1178.0-Period[11,7051]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_1180.0-Period[11,7008]
+c2seq = 0,1,0,5,4,
+recipes/factor_recipe_1241.0-Period[11,7030]
+c2seq = 0,0,2,0,10,
+recipes/factor_recipe_1241.0-Period[11,7063]
+c2seq = 1,1,2,4,9,
+recipes/factor_recipe_1260.0-Period[11,7004]
+c2seq = 1,1,4,4,5,
+recipes/factor_recipe_1275.0-Period[11,7015]
+c2seq = 1,0,3,2,10,
+recipes/factor_recipe_1278.0-Period[11,7094]
+c2seq = 1,2,0,5,2,
+
+recipes/factor_recipe_100.0-Period[11,7418] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_176.0-Period[11,7423]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_189.0-Period[11,7144]
+c2seq = 0,0,0,2,0,
+recipes/factor_recipe_189.0-Period[11,7145]
+c2seq = 0,1,0,0,3,
+recipes/factor_recipe_189.0-Period[11,7147]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_189.0-Period[11,7151]
+c2seq = 0,2,1,6,10,
+recipes/factor_recipe_210.0-Period[11,7149]
+c2seq = 0,1,1,1,1,
+recipes/factor_recipe_210.0-Period[11,7153]
+c2seq = 0,2,1,6,10,
+recipes/factor_recipe_210.0-Period[11,7156]
+c2seq = 0,0,3,4,10,
+recipes/factor_recipe_216.0-Period[11,7173]
+c2seq = 0,1,2,4,4,
+recipes/factor_recipe_216.0-Period[11,7195]
+c2seq = 0,2,2,2,6,
+recipes/factor_recipe_231.0-Period[11,7157]
+c2seq = 0,2,1,6,10,
+recipes/factor_recipe_231.0-Period[11,7158]
+c2seq = 0,2,3,3,0,
+recipes/factor_recipe_247.0-Period[11,7171]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_247.0-Period[11,7196]
+c2seq = 0,2,4,4,8,
+recipes/factor_recipe_252.0-Period[11,7155]
+c2seq = 0,0,0,2,0,
+recipes/factor_recipe_260.0-Period[11,7453]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_264.0-Period[11,7146]
+c2seq = 0,2,3,3,0,
+recipes/factor_recipe_266.0-Period[11,7454]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_300.0-Period[11,7449]
+c2seq = 0,1,2,5,8,
+recipes/factor_recipe_341.0-Period[11,7163]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_360.0-Period[11,7461]
+c2seq = 1,1,2,2,0,
+recipes/factor_recipe_363.0-Period[11,7446] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_384.0-Period[11,7161]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_407.0-Period[11,7197]
+c2seq = 0,2,3,2,5,
+recipes/factor_recipe_407.0-Period[11,7198]
+c2seq = 1,1,4,6,1,
+recipes/factor_recipe_420.0-Period[11,7199]
+c2seq = 0,1,4,2,9,
+recipes/factor_recipe_420.0-Period[11,7447] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_448.0-Period[11,7180]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_455.0-Period[11,7203]
+c2seq = 0,1,4,0,1,
+recipes/factor_recipe_481.0-Period[11,7271]
+c2seq = 1,0,4,6,2,
+recipes/factor_recipe_484.0-Period[11,7150]
+c2seq = 0,1,0,0,3,
+recipes/factor_recipe_494.0-Period[11,7433]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_495.0-Period[11,7236]
+c2seq = 0,1,3,1,0,
+recipes/factor_recipe_528.0-Period[11,7202]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_533.0-Period[11,7194]
+c2seq = 0,0,2,1,9,
+recipes/factor_recipe_533.0-Period[11,7227]
+c2seq = 1,1,2,0,5,
+recipes/factor_recipe_560.0-Period[11,7112]
+c2seq = 1,1,1,1,1,
+recipes/factor_recipe_560.0-Period[11,7429]
+c2seq = 0,0,3,2,1,
+recipes/factor_recipe_564.0-Period[11,7175]
+c2seq = 0,0,1,3,0,
+recipes/factor_recipe_564.0-Period[11,7224]
+c2seq = 1,2,0,5,7,
+recipes/factor_recipe_564.0-Period[11,7427]
+c2seq = 0,0,4,6,10,
+recipes/factor_recipe_576.0-Period[11,7464]
+c2seq = 1,2,2,0,0,
+recipes/factor_recipe_585.0-Period[11,7263]
+c2seq = 0,0,4,0,0,
+recipes/factor_recipe_588.0-Period[11,7206]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_590.0-Period[11,7162]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_611.0-Period[11,7169]
+c2seq = 0,0,0,1,0,
+recipes/factor_recipe_611.0-Period[11,7426]
+c2seq = 0,0,2,6,5,
+recipes/factor_recipe_612.0-Period[11,7120]
+c2seq = 1,2,3,2,7,
+recipes/factor_recipe_630.0-Period[11,7200]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_630.0-Period[11,7217]
+c2seq = 0,2,2,2,0,
+recipes/factor_recipe_630.0-Period[11,7438]
+c2seq = 1,1,3,6,10,
+recipes/factor_recipe_648.0-Period[11,7160]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_658.0-Period[11,7172]
+c2seq = 0,2,1,2,2,
+recipes/factor_recipe_658.0-Period[11,7420]
+c2seq = 0,1,4,0,1,
+recipes/factor_recipe_658.0-Period[11,7422]
+c2seq = 0,1,4,0,1,
+recipes/factor_recipe_658.0-Period[11,7431]
+c2seq = 0,0,3,1,4,
+recipes/factor_recipe_660.0-Period[11,7138]
+c2seq = 1,2,0,4,0,
+recipes/factor_recipe_660.0-Period[11,7148]
+c2seq = 0,2,3,3,0,
+recipes/factor_recipe_660.0-Period[11,7167]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_670.0-Period[11,7152]
+c2seq = 0,2,3,3,0,
+recipes/factor_recipe_672.0-Period[11,7424]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_672.0-Period[11,7445]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_675.0-Period[11,7218]
+c2seq = 1,2,1,4,3,
+recipes/factor_recipe_675.0-Period[11,7457]
+c2seq = 0,2,3,1,1,
+recipes/factor_recipe_684.0-Period[11,7215]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_686.0-Period[11,7281]
+c2seq = 1,1,0,2,0,
+recipes/factor_recipe_688.0-Period[11,7226]
+c2seq = 1,2,0,2,6,
+recipes/factor_recipe_697.0-Period[11,7119]
+c2seq = 0,0,4,5,8,
+recipes/factor_recipe_704.0-Period[11,7421]
+c2seq = 0,1,4,0,1,
+recipes/factor_recipe_705.0-Period[11,7159]
+c2seq = 0,1,1,3,9,
+recipes/factor_recipe_705.0-Period[11,7178]
+c2seq = 0,2,2,0,4,
+recipes/factor_recipe_713.0-Period[11,7451] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_714.0-Period[11,7450]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_732.0-Period[11,7432]
+c2seq = 1,2,2,4,0,
+recipes/factor_recipe_736.0-Period[11,7174]
+c2seq = 1,2,1,3,5,
+recipes/factor_recipe_736.0-Period[11,7181]
+c2seq = 1,0,1,4,8,
+recipes/factor_recipe_738.0-Period[11,7128]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_741.0-Period[11,7113]
+c2seq = 1,1,0,5,0,
+recipes/factor_recipe_748.0-Period[11,7154]
+c2seq = 0,0,3,4,10,
+recipes/factor_recipe_748.0-Period[11,7259]
+c2seq = 0,0,3,1,3,
+recipes/factor_recipe_759.0-Period[11,7288]
+c2seq = 0,2,3,0,7,
+recipes/factor_recipe_767.0-Period[11,7336]
+c2seq = 0,1,1,2,6,
+recipes/factor_recipe_768.0-Period[11,7428]
+c2seq = 1,2,0,5,7,
+recipes/factor_recipe_780.0-Period[11,7270]
+c2seq = 0,1,1,6,3,
+recipes/factor_recipe_782.0-Period[11,7204]
+c2seq = 1,2,1,4,3,
+recipes/factor_recipe_784.0-Period[11,7301]
+c2seq = 0,2,3,0,7,
+recipes/factor_recipe_784.0-Period[11,7425]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_810.0-Period[11,7111]
+c2seq = 1,1,0,0,10,
+recipes/factor_recipe_810.0-Period[11,7290]
+c2seq = 0,0,4,6,9,
+recipes/factor_recipe_816.0-Period[11,7220]
+c2seq = 1,0,1,4,8,
+recipes/factor_recipe_816.0-Period[11,7303]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_816.0-Period[11,7434]
+c2seq = 1,0,1,2,0,
+recipes/factor_recipe_816.0-Period[11,7459]
+c2seq = 0,1,1,6,0,
+recipes/factor_recipe_847.0-Period[11,7166]
+c2seq = 1,2,4,2,3,
+recipes/factor_recipe_855.0-Period[11,7306]
+c2seq = 1,2,0,4,3,
+recipes/factor_recipe_855.0-Period[11,7383]
+c2seq = 0,0,4,5,7,
+recipes/factor_recipe_858.0-Period[11,7384]
+c2seq = 1,0,4,3,9,
+recipes/factor_recipe_864.0-Period[11,7190]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_864.0-Period[11,7462]
+c2seq = 0,1,4,1,2,
+recipes/factor_recipe_867.0-Period[11,7231]
+c2seq = 0,2,0,0,1,
+recipes/factor_recipe_867.0-Period[11,7289]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_867.0-Period[11,7456]
+c2seq = 1,2,0,5,7,
+recipes/factor_recipe_867.0-Period[11,7460]
+c2seq = 1,2,2,4,0,
+recipes/factor_recipe_884.0-Period[11,7465]
+c2seq = 0,0,1,6,6,
+recipes/factor_recipe_900.0-Period[11,7211]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_910.0-Period[11,7223]
+c2seq = 0,0,4,2,9,
+recipes/factor_recipe_915.0-Period[11,7164]
+c2seq = 0,1,1,2,10,
+recipes/factor_recipe_920.0-Period[11,7300]
+c2seq = 0,2,4,6,2,
+recipes/factor_recipe_923.0-Period[11,7193]
+c2seq = 0,1,2,4,4,
+recipes/factor_recipe_928.0-Period[11,7463]
+c2seq = 0,1,3,2,6,
+recipes/factor_recipe_930.0-Period[11,7356]
+c2seq = 0,2,4,1,1,
+recipes/factor_recipe_935.0-Period[11,7304]
+c2seq = 0,1,4,5,4,
+recipes/factor_recipe_936.0-Period[11,7369]
+c2seq = 1,1,1,1,6,
+recipes/factor_recipe_938.0-Period[11,7448]
+c2seq = 0,2,2,5,9,
+recipes/factor_recipe_945.0-Period[11,7221]
+c2seq = 1,0,0,1,7,
+recipes/factor_recipe_948.0-Period[11,7216]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_966.0-Period[11,7341]
+c2seq = 0,1,3,1,7,
+recipes/factor_recipe_969.0-Period[11,7452]
+c2seq = 0,1,1,6,4,
+recipes/factor_recipe_1014.0-Period[11,7184]
+c2seq = 0,0,1,2,6,
+recipes/factor_recipe_1022.0-Period[11,7213]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_1024.0-Period[11,7170]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_1026.0-Period[11,7386]
+c2seq = 0,2,3,1,1,
+recipes/factor_recipe_1035.0-Period[11,7242]
+c2seq = 0,2,2,4,5,
+recipes/factor_recipe_1040.0-Period[11,7334]
+c2seq = 0,0,3,1,4,
+recipes/factor_recipe_1080.0-Period[11,7266]
+c2seq = 0,2,4,5,1,
+
+recipes/factor_recipe_1092.0-Period[11,7380]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_1098.0-Period[11,7311]
+c2seq = 0,2,4,0,3,
+recipes/factor_recipe_1104.0-Period[11,7357]
+c2seq = 1,0,1,0,4,
+recipes/factor_recipe_1111.0-Period[11,7296]
+c2seq = 1,1,0,6,8,
+recipes/factor_recipe_1122.0-Period[11,7295]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_1134.0-Period[11,7187]
+c2seq = 1,0,1,1,6,
+recipes/factor_recipe_1139.0-Period[11,7387]
+c2seq = 0,1,2,3,4,
+recipes/factor_recipe_1144.0-Period[11,7248]
+c2seq = 1,2,1,3,9,
+recipes/factor_recipe_1152.0-Period[11,7338]
+c2seq = 1,2,1,2,1,
+recipes/factor_recipe_1155.0-Period[11,7212]
+c2seq = 0,2,1,5,2,
+recipes/factor_recipe_1159.0-Period[11,7219]
+c2seq = 0,1,0,2,6,
+recipes/factor_recipe_1184.0-Period[11,7192]
+c2seq = 0,2,0,0,3,
+recipes/factor_recipe_1190.0-Period[11,7114]
+c2seq = 0,0,4,0,5,
+recipes/factor_recipe_1200.0-Period[11,7273]
+c2seq = 0,2,2,1,0,
+recipes/factor_recipe_1224.0-Period[11,7177]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_1224.0-Period[11,7235]
+c2seq = 1,2,2,1,6,
+recipes/factor_recipe_1224.0-Period[11,7262]
+c2seq = 0,2,0,6,7,
+recipes/factor_recipe_1235.0-Period[11,7315]
+c2seq = 0,1,3,3,8,
+recipes/factor_recipe_1248.0-Period[11,7280]
+c2seq = 0,1,4,5,4,
+recipes/factor_recipe_1274.0-Period[11,7205]
+c2seq = 1,2,2,3,10,
+recipes/factor_recipe_1275.0-Period[11,7443]
+c2seq = 1,2,2,3,10,
+recipes/factor_recipe_1281.0-Period[11,7247]
+c2seq = 1,0,3,2,2,
+recipes/factor_recipe_1290.0-Period[11,7285]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_1296.0-Period[11,7310]
+c2seq = 0,0,2,5,10,
+recipes/factor_recipe_1296.0-Period[11,7441]
+c2seq = 1,1,3,6,2,
+recipes/factor_recipe_1298.0-Period[11,7345]
+c2seq = 0,0,4,6,0,
+recipes/factor_recipe_1302.0-Period[11,7286]
+c2seq = 0,1,0,6,1,
+recipes/factor_recipe_1313.0-Period[11,7210]
+c2seq = 0,2,3,0,7,
+recipes/factor_recipe_1320.0-Period[11,7191]
+c2seq = 0,0,2,0,10,
+recipes/factor_recipe_1328.0-Period[11,6976]
+c2seq = 0,0,3,1,4,
+recipes/factor_recipe_1330.0-Period[11,7319]
+c2seq = 1,2,0,2,10,
+recipes/factor_recipe_1332.0-Period[11,7165]
+c2seq = 0,1,0,6,2,
+recipes/factor_recipe_1339.0-Period[11,7179]
+c2seq = 1,2,1,2,1,
+recipes/factor_recipe_1343.0-Period[11,7118]
+c2seq = 0,2,0,6,8,
+recipes/factor_recipe_1349.0-Period[11,7095]
+c2seq = 0,0,1,1,5,
+recipes/factor_recipe_1352.0-Period[11,7267]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_1380.0-Period[11,7230]
+c2seq = 0,1,2,3,4,
+recipes/factor_recipe_1380.0-Period[11,7258]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1400.0-Period[11,7097]
+c2seq = 0,2,4,4,8,
+recipes/factor_recipe_1411.0-Period[11,6984]
+c2seq = 1,1,2,4,9,
+
+recipes/factor_recipe_182.0-Period[11,7685] // BUG INCORRECT
+c2seq = 1,1,2,3,10,
+recipes/factor_recipe_216.0-Period[11,7617]
+c2seq = 0,0,4,1,1,
+recipes/factor_recipe_345.0-Period[11,7673]
+c2seq = 0,1,2,5,8,
+recipes/factor_recipe_390.0-Period[11,7561]
+c2seq = 0,2,2,4,5,
+recipes/factor_recipe_403.0-Period[11,7479]
+c2seq = 1,0,3,2,2,
+recipes/factor_recipe_504.0-Period[11,7482]
+c2seq = 1,2,4,6,7,
+recipes/factor_recipe_504.0-Period[11,7486]
+c2seq = 1,0,0,1,9,
+recipes/factor_recipe_507.0-Period[11,7689]
+c2seq = 1,0,1,0,4,
+recipes/factor_recipe_525.0-Period[11,7481]
+c2seq = 1,0,3,2,2,
+recipes/factor_recipe_560.0-Period[11,7547]
+c2seq = 0,2,2,1,0,
+recipes/factor_recipe_576.0-Period[11,7480]
+c2seq = 1,0,0,1,9,
+recipes/factor_recipe_585.0-Period[11,7485]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_585.0-Period[11,7686]
+c2seq = 0,1,2,2,1,
+recipes/factor_recipe_615.0-Period[11,7560]
+c2seq = 0,1,4,1,4,
+recipes/factor_recipe_660.0-Period[11,7501]
+c2seq = 0,2,1,5,5,
+recipes/factor_recipe_676.0-Period[11,7625]
+c2seq = 0,2,2,5,8,
+recipes/factor_recipe_714.0-Period[11,7678]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_736.0-Period[11,7562]
+c2seq = 1,1,1,5,2,
+recipes/factor_recipe_741.0-Period[11,7500]
+c2seq = 1,1,0,1,2,
+recipes/factor_recipe_744.0-Period[11,7470]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_744.0-Period[11,7493]
+c2seq = 1,1,2,2,9,
+recipes/factor_recipe_754.0-Period[11,7478]
+c2seq = 1,0,1,2,1,
+recipes/factor_recipe_756.0-Period[11,7471]
+c2seq = 0,2,3,1,1,
+recipes/factor_recipe_765.0-Period[11,7473]
+c2seq = 0,1,4,2,2,
+recipes/factor_recipe_768.0-Period[11,7503]
+c2seq = 1,1,2,2,8,
+recipes/factor_recipe_793.0-Period[11,7642]
+c2seq = 0,1,2,5,7,
+recipes/factor_recipe_798.0-Period[11,7538]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_798.0-Period[11,7563]
+c2seq = 0,2,3,1,1,
+recipes/factor_recipe_799.0-Period[11,7616]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_816.0-Period[11,7475]
+c2seq = 1,0,1,2,0,
+recipes/factor_recipe_848.0-Period[11,7491]
+c2seq = 1,1,4,2,7,
+recipes/factor_recipe_852.0-Period[11,7555]
+c2seq = 0,1,0,6,1,
+recipes/factor_recipe_864.0-Period[11,7630]
+c2seq = 0,2,1,6,2,
+recipes/factor_recipe_893.0-Period[11,7696]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_896.0-Period[11,7581]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_900.0-Period[11,7474]
+c2seq = 1,2,0,5,5,
+recipes/factor_recipe_900.0-Period[11,7476]
+c2seq = 0,2,4,6,7,
+recipes/factor_recipe_900.0-Period[11,7504]
+c2seq = 1,0,0,0,4,
+recipes/factor_recipe_901.0-Period[11,7556]
+c2seq = 1,0,4,6,2,
+recipes/factor_recipe_915.0-Period[11,7679]
+c2seq = 1,2,2,2,2,
+recipes/factor_recipe_918.0-Period[11,7497]
+c2seq = 1,1,2,4,0,
+recipes/factor_recipe_936.0-Period[11,7558]
+c2seq = 0,0,4,3,10,
+recipes/factor_recipe_952.0-Period[11,7636]
+c2seq = 1,2,3,3,3,
+recipes/factor_recipe_966.0-Period[11,7494]
+c2seq = 1,0,4,2,0,
+recipes/factor_recipe_972.0-Period[11,7692]
+c2seq = 1,1,1,1,6,
+recipes/factor_recipe_976.0-Period[11,7496]
+c2seq = 0,1,4,3,2,
+recipes/factor_recipe_986.0-Period[11,7691]
+c2seq = 1,2,1,4,3,
+recipes/factor_recipe_987.0-Period[11,7697]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_988.0-Period[11,7640]
+c2seq = 0,0,4,3,2,
+recipes/factor_recipe_1003.0-Period[11,7634]
+c2seq = 0,2,4,4,1,
+recipes/factor_recipe_1008.0-Period[11,7536]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_1062.0-Period[11,7633]
+c2seq = 0,1,3,6,3,
+recipes/factor_recipe_1062.0-Period[11,7635]
+c2seq = 0,0,2,2,10,
+recipes/factor_recipe_1062.0-Period[11,7648]
+c2seq = 0,0,0,3,9,
+recipes/factor_recipe_1080.0-Period[11,7570]
+c2seq = 1,0,0,4,5,
+recipes/factor_recipe_1088.0-Period[11,7510]
+c2seq = 0,1,4,1,4,
+recipes/factor_recipe_1092.0-Period[11,7627]// BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_1120.0-Period[11,7698]
+c2seq = 0,1,0,2,6,
+recipes/factor_recipe_1121.0-Period[11,7649]
+c2seq = 1,1,3,6,4,
+recipes/factor_recipe_1122.0-Period[11,7492]
+c2seq = 0,2,4,1,1,
+recipes/factor_recipe_1152.0-Period[11,7472]
+c2seq = 0,1,0,1,8,
+recipes/factor_recipe_1173.0-Period[11,7488]
+c2seq = 1,1,4,4,8,
+recipes/factor_recipe_1177.0-Period[11,7565]
+c2seq = 0,0,1,0,6,
+recipes/factor_recipe_1178.0-Period[11,7615]
+c2seq = 1,0,0,1,9,
+recipes/factor_recipe_1180.0-Period[11,7643]
+c2seq = 0,1,1,0,4,
+recipes/factor_recipe_1180.0-Period[11,7647]
+c2seq = 1,2,0,2,9,
+recipes/factor_recipe_1185.0-Period[11,7533]
+c2seq = 1,2,2,4,0,
+recipes/factor_recipe_1200.0-Period[11,7688]
+c2seq = 1,1,3,2,1,
+recipes/factor_recipe_1207.0-Period[11,7582]
+c2seq = 1,2,2,2,2,
+recipes/factor_recipe_1224.0-Period[11,7514]
+c2seq = 0,1,2,2,1,
+recipes/factor_recipe_1235.0-Period[11,7467]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_1240.0-Period[11,7468]
+c2seq = 0,2,3,0,7,
+recipes/factor_recipe_1274.0-Period[11,7659]
+c2seq = 1,1,2,0,10,
+recipes/factor_recipe_1280.0-Period[11,7674]
+c2seq = 0,2,2,4,3,
+recipes/factor_recipe_1292.0-Period[11,7544]
+c2seq = 1,2,2,4,0,
+recipes/factor_recipe_1342.0-Period[11,7629]
+c2seq = 1,1,0,4,8,
+recipes/factor_recipe_1344.0-Period[11,7624]
+c2seq = 1,0,1,6,6,
+recipes/factor_recipe_1360.0-Period[11,7637]
+c2seq = 1,1,4,0,10,
+recipes/factor_recipe_1365.0-Period[11,7539]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_1380.0-Period[11,7693]
+c2seq = 1,2,2,0,0,
+recipes/factor_recipe_1392.0-Period[11,7530]
+c2seq = 0,1,0,6,1,
+recipes/factor_recipe_1400.0-Period[11,7619]
+c2seq = 0,1,4,0,1,
+recipes/factor_recipe_1419.0-Period[11,7618] // BUG INCORRECT
+c2seq = 1,1,4,6,
+recipes/factor_recipe_1422.0-Period[11,6990]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_1425.0-Period[11,7628]
+c2seq = 0,2,4,6,10,
+recipes/factor_recipe_1425.0-Period[11,7645]
+c2seq = 0,1,2,5,7,
+recipes/factor_recipe_1426.0-Period[11,7564]
+c2seq = 0,0,4,3,10,
+recipes/factor_recipe_1426.0-Period[11,7568]
+c2seq = 0,1,0,6,5,
+recipes/factor_recipe_1428.0-Period[11,7379]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_1440.0-Period[11,7133]
+c2seq = 0,2,3,6,1,
+recipes/factor_recipe_1440.0-Period[11,7186]
+c2seq = 0,1,0,5,8,
+recipes/factor_recipe_1445.0-Period[11,7232]
+c2seq = 1,1,2,3,0,
+recipes/factor_recipe_1455.0-Period[11,7646]
+c2seq = 0,0,2,2,3,
+recipes/factor_recipe_1456.0-Period[11,7209]
+c2seq = 1,2,1,3,5,
+recipes/factor_recipe_1456.0-Period[11,7308]
+c2seq = 1,0,3,3,1,
+recipes/factor_recipe_1464.0-Period[11,7038]
+c2seq = 1,1,3,6,2,
+recipes/factor_recipe_1470.0-Period[11,6979]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_1470.0-Period[11,7661]
+c2seq = 0,0,3,1,4,
+recipes/factor_recipe_1480.0-Period[11,7016]
+c2seq = 0,0,1,2,6,
+recipes/factor_recipe_1482.0-Period[11,7366]
+c2seq = 1,2,2,0,0,
+recipes/factor_recipe_1485.0-Period[11,7090]
+c2seq = 1,2,4,0,0,
+recipes/factor_recipe_1488.0-Period[11,7049]
+c2seq = 1,1,2,4,0,
+recipes/factor_recipe_1491.0-Period[11,7034]
+c2seq = 0,1,0,4,5,
+recipes/factor_recipe_1496.0-Period[11,7001]
+c2seq = 0,0,0,4,3,
+recipes/factor_recipe_1496.0-Period[11,7513]
+c2seq = 0,0,1,4,2,
+recipes/factor_recipe_1500.0-Period[11,7083]
+c2seq = 0,1,4,3,6,
+recipes/factor_recipe_1512.0-Period[11,7055]
+c2seq = 0,1,4,3,2,
+recipes/factor_recipe_1513.0-Period[11,7436]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_1520.0-Period[11,7477]
+c2seq = 1,1,2,0,6,
+recipes/factor_recipe_1520.0-Period[11,7623]
+c2seq = 0,0,3,1,8,
+recipes/factor_recipe_1530.0-Period[11,6982]
+c2seq = 0,0,4,1,1,
+recipes/factor_recipe_1530.0-Period[11,7017]
+c2seq = 0,0,2,0,10,
+recipes/factor_recipe_1530.0-Period[11,7343]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_1548.0-Period[11,7325]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1548.0-Period[11,7522]
+c2seq = 0,0,4,3,10,
+recipes/factor_recipe_1552.0-Period[11,7419]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_1562.0-Period[11,7620]
+c2seq = 1,2,1,4,3,
+recipes/factor_recipe_1566.0-Period[11,7103]
+c2seq = 1,1,2,4,0,
+recipes/factor_recipe_1568.0-Period[11,7009]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1580.0-Period[11,7543]
+c2seq = 0,0,4,1,0,
+recipes/factor_recipe_1584.0-Period[11,7364]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_1596.0-Period[11,6967]
+c2seq = 0,0,2,2,3,
+recipes/factor_recipe_1596.0-Period[11,7022]
+c2seq = 0,1,2,0,0,
+recipes/factor_recipe_1596.0-Period[11,7025]
+c2seq = 0,1,4,0,6,
+recipes/factor_recipe_1596.0-Period[11,7275]
+c2seq = 0,1,4,1,8,
+recipes/factor_recipe_1606.0-Period[11,7058]
+c2seq = 0,2,3,0,7,
+recipes/factor_recipe_1615.0-Period[11,7355]
+c2seq = 1,2,2,0,0,
+recipes/factor_recipe_1615.0-Period[11,7484]
+c2seq = 0,0,0,2,7,
+recipes/factor_recipe_1616.0-Period[11,7340]
+c2seq = 0,2,1,1,5,
+recipes/factor_recipe_1632.0-Period[11,7683]
+c2seq = 0,1,3,3,6,
+recipes/factor_recipe_1664.0-Period[11,7372]
+c2seq = 0,2,0,2,10,
+recipes/factor_recipe_1674.0-Period[11,7089]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_1680.0-Period[11,7234]
+c2seq = 1,2,3,2,6,
+recipes/factor_recipe_1680.0-Period[11,7439]
+c2seq = 1,1,0,3,4,
+recipes/factor_recipe_1700.0-Period[11,7574]
+c2seq = 1,0,4,4,1,
+recipes/factor_recipe_1700.0-Period[11,7622]
+c2seq = 1,2,3,4,8,
+recipes/factor_recipe_1701.0-Period[11,7466]
+c2seq = 0,2,2,5,2,
+recipes/factor_recipe_1717.0-Period[11,7385]
+c2seq = 0,2,0,0,1,
+recipes/factor_recipe_1725.0-Period[11,7228]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_1728.0-Period[11,7208]
+c2seq = 1,2,3,4,10,
+recipes/factor_recipe_1728.0-Period[11,7430]
+c2seq = 1,2,1,3,9,
+recipes/factor_recipe_1728.0-Period[11,7671]
+c2seq = 0,2,0,4,7,
+recipes/factor_recipe_1736.0-Period[11,7088]
+c2seq = 1,0,4,6,0,
+recipes/factor_recipe_1742.0-Period[11,7251]
+c2seq = 0,1,2,0,6,
+recipes/factor_recipe_1744.0-Period[11,7176]
+c2seq = 1,0,4,1,3,
+recipes/factor_recipe_1748.0-Period[11,7335]
+c2seq = 0,0,0,1,0,
+recipes/factor_recipe_1751.0-Period[11,7307]
+c2seq = 0,1,0,1,8,
+recipes/factor_recipe_1751.0-Period[11,7577]
+c2seq = 1,1,3,0,4,
+recipes/factor_recipe_1755.0-Period[11,7553]
+c2seq = 0,1,4,5,4,
+recipes/factor_recipe_1764.0-Period[11,7052]
+c2seq = 1,1,2,4,0,
+recipes/factor_recipe_1785.0-Period[11,7099]
+c2seq = 1,2,1,3,2,
+recipes/factor_recipe_1785.0-Period[11,7302]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_1794.0-Period[11,7631]
+c2seq = 0,2,2,2,3,
+recipes/factor_recipe_1800.0-Period[11,7207]
+c2seq = 1,1,1,4,8,
+recipes/factor_recipe_1805.0-Period[11,7010]
+c2seq = 0,1,4,6,5,
+recipes/factor_recipe_1806.0-Period[11,7078]
+c2seq = 0,1,3,3,9,
+recipes/factor_recipe_1836.0-Period[11,7201]
+c2seq = 0,2,3,0,8,
+recipes/factor_recipe_1845.0-Period[11,7469]
+c2seq = 0,0,0,2,6,
+recipes/factor_recipe_1862.0-Period[11,7000]
+c2seq = 0,0,2,3,1,
+recipes/factor_recipe_1863.0-Period[11,7407]
+c2seq = 1,2,3,2,7,
+recipes/factor_recipe_1872.0-Period[11,7183]
+c2seq = 0,1,4,1,4,
+recipes/factor_recipe_1876.0-Period[11,7653]
+c2seq = 0,0,2,3,1,
+recipes/factor_recipe_1886.0-Period[11,7397]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1886.0-Period[11,7412]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1900.0-Period[11,7309]
+c2seq = 0,0,4,1,6,
+recipes/factor_recipe_1900.0-Period[11,7455]
+c2seq = 1,0,1,2,1,
+recipes/factor_recipe_1904.0-Period[11,7411]
+c2seq = 1,0,3,4,7,
+recipes/factor_recipe_1924.0-Period[11,7057]
+c2seq = 0,2,1,1,8,
+recipes/factor_recipe_1938.0-Period[11,7107]
+c2seq = 0,2,2,2,0,
+recipes/factor_recipe_1938.0-Period[11,7123]
+c2seq = 0,0,4,2,9,
+recipes/factor_recipe_1940.0-Period[11,7233]
+c2seq = 1,2,4,6,8,
+recipes/factor_recipe_1944.0-Period[11,7268]
+c2seq = 1,1,4,6,1,
+recipes/factor_recipe_1953.0-Period[11,7274]
+c2seq = 1,2,2,0,0,
+recipes/factor_recipe_1962.0-Period[11,7229]
+c2seq = 0,1,3,2,10,
+recipes/factor_recipe_1962.0-Period[11,7690]
+c2seq = 1,0,2,6,1,
+recipes/factor_recipe_1968.0-Period[11,7225]
+c2seq = 1,1,3,6,8,
+recipes/factor_recipe_1968.0-Period[11,7531]
+c2seq = 0,1,2,5,7,
+recipes/factor_recipe_1968.0-Period[11,7621]
+c2seq = 1,2,0,5,5,
+recipes/factor_recipe_1972.0-Period[11,7342]
+c2seq = 1,2,1,2,1,
+recipes/factor_recipe_1995.0-Period[11,7483]
+c2seq = 1,1,2,6,6,
+recipes/factor_recipe_2016.0-Period[11,7222]
+c2seq = 0,0,4,0,3,
+recipes/factor_recipe_2016.0-Period[11,7322]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_2016.0-Period[11,7344]
+c2seq = 0,1,2,1,9,
+recipes/factor_recipe_2016.0-Period[11,7398]
+c2seq = 0,0,1,2,8,
+recipes/factor_recipe_2016.0-Period[11,7405]
+c2seq = 0,2,4,4,1,
+recipes/factor_recipe_2020.0-Period[11,7293]
+c2seq = 1,1,4,6,8,
+recipes/factor_recipe_2024.0-Period[11,7672]
+c2seq = 0,1,3,1,6,
+recipes/factor_recipe_2033.0-Period[11,7584]
+c2seq = 1,2,3,1,10,
+recipes/factor_recipe_2034.0-Period[11,7188]
+c2seq = 1,2,2,2,9,
+recipes/factor_recipe_2040.0-Period[11,7347]
+c2seq = 0,1,3,3,8,
+recipes/factor_recipe_2044.0-Period[11,7115]
+c2seq = 1,0,4,2,7,
+recipes/factor_recipe_2052.0-Period[11,7655]
+c2seq = 0,2,2,0,0,
+
+recipes/factor_recipe_96.0-Period[11,7417] // BUG INCORRECT
+c2seq = 0,1,0,0,
+recipes/factor_recipe_120.0-Period[11,7870]
+c2seq = 1,1,3,6,1,
+recipes/factor_recipe_198.0-Period[11,7904]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_198.0-Period[11,7907]
+c2seq = 1,1,1,0,9,
+recipes/factor_recipe_216.0-Period[11,7910]
+c2seq = 0,0,1,5,1,
+recipes/factor_recipe_216.0-Period[11,7912]
+c2seq = 0,1,3,1,1,
+recipes/factor_recipe_240.0-Period[11,7905]
+c2seq = 0,1,3,1,1,
+recipes/factor_recipe_242.0-Period[11,7914]
+c2seq = 0,1,0,3,1,
+recipes/factor_recipe_252.0-Period[11,8158]
+c2seq = 0,0,3,4,7,
+recipes/factor_recipe_270.0-Period[11,7868]
+c2seq = 0,0,2,1,10,
+recipes/factor_recipe_320.0-Period[11,7908]
+c2seq = 0,1,3,1,1,
+recipes/factor_recipe_330.0-Period[11,7903]
+c2seq = 0,1,3,1,1,
+recipes/factor_recipe_338.0-Period[11,7762]
+c2seq = 0,1,1,0,2,
+recipes/factor_recipe_350.0-Period[11,7876]
+c2seq = 1,2,3,6,10,
+recipes/factor_recipe_352.0-Period[11,7913]
+c2seq = 0,1,0,3,1,
+recipes/factor_recipe_364.0-Period[11,7763]
+c2seq = 0,0,4,0,0,
+recipes/factor_recipe_384.0-Period[11,7862]
+c2seq = 0,0,0,1,0,
+recipes/factor_recipe_384.0-Period[11,7909]
+c2seq = 1,1,1,1,6,
+recipes/factor_recipe_400.0-Period[11,7852]
+c2seq = 0,1,3,2,9,
+recipes/factor_recipe_400.0-Period[11,7860]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_400.0-Period[11,7875]
+c2seq = 0,1,2,0,5,
+recipes/factor_recipe_403.0-Period[11,7911]
+c2seq = 0,1,3,1,1,
+recipes/factor_recipe_420.0-Period[11,7846]
+c2seq = 1,0,2,0,0,
+recipes/factor_recipe_465.0-Period[11,7854]
+c2seq = 0,1,4,3,6,
+recipes/factor_recipe_468.0-Period[11,7861]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_476.0-Period[11,7766]
+c2seq = 1,0,4,6,0,
+recipes/factor_recipe_480.0-Period[11,7847]
+c2seq = 1,1,3,1,4,
+recipes/factor_recipe_480.0-Period[11,7863]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_481.0-Period[11,7906]
+c2seq = 1,0,2,0,8,
+recipes/factor_recipe_504.0-Period[11,7855]
+c2seq = 1,2,1,3,9,
+recipes/factor_recipe_512.0-Period[11,7874]
+c2seq = 0,0,1,2,1,
+recipes/factor_recipe_516.0-Period[11,7815]
+c2seq = 0,1,2,5,7,
+recipes/factor_recipe_528.0-Period[11,7853]
+c2seq = 0,0,2,6,5,
+recipes/factor_recipe_540.0-Period[11,7773]
+c2seq = 0,2,1,5,5,
+recipes/factor_recipe_585.0-Period[11,8157]
+c2seq = 0,1,1,6,3,
+recipes/factor_recipe_592.0-Period[11,7873]
+c2seq = 0,0,3,0,10,
+recipes/factor_recipe_608.0-Period[11,7743]
+c2seq = 0,2,0,4,2,
+recipes/factor_recipe_648.0-Period[11,7856]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_650.0-Period[11,7877]
+c2seq = 0,2,4,3,3,
+recipes/factor_recipe_660.0-Period[11,7816]
+c2seq = 0,1,1,2,6,
+recipes/factor_recipe_660.0-Period[11,7848]
+c2seq = 0,1,2,1,9,
+recipes/factor_recipe_690.0-Period[11,8393]
+c2seq = 1,2,3,3,3,
+recipes/factor_recipe_697.0-Period[11,7839]
+c2seq = 1,1,1,5,2,
+recipes/factor_recipe_700.0-Period[11,7872]
+c2seq = 0,2,0,3,3,
+recipes/factor_recipe_714.0-Period[11,7765]
+c2seq = 1,2,1,3,2,
+recipes/factor_recipe_736.0-Period[11,7764]
+c2seq = 0,2,4,6,2,
+recipes/factor_recipe_748.0-Period[11,7814]
+c2seq = 1,0,1,2,0,
+recipes/factor_recipe_765.0-Period[11,8399]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_780.0-Period[11,7813]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_782.0-Period[11,8035]
+c2seq = 0,1,4,0,8,
+recipes/factor_recipe_792.0-Period[11,8136]
+c2seq = 0,2,0,5,1,
+recipes/factor_recipe_793.0-Period[11,7811]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_810.0-Period[11,8159]
+c2seq = 0,1,0,0,9,
+recipes/factor_recipe_825.0-Period[11,8389]
+c2seq = 0,1,0,1,4,
+recipes/factor_recipe_826.0-Period[11,7738]
+c2seq = 0,1,1,6,0,
+recipes/factor_recipe_828.0-Period[11,7812]
+c2seq = 1,0,1,4,8,
+recipes/factor_recipe_828.0-Period[11,7842]
+c2seq = 1,1,0,6,8,
+recipes/factor_recipe_832.0-Period[11,7767]
+c2seq = 0,0,4,6,9,
+recipes/factor_recipe_846.0-Period[11,7741]
+c2seq = 1,2,1,2,4,
+recipes/factor_recipe_846.0-Period[11,8160]
+c2seq = 0,0,3,5,5,
+recipes/factor_recipe_855.0-Period[11,7878]
+c2seq = 1,0,3,5,3,
+recipes/factor_recipe_858.0-Period[11,7879]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_880.0-Period[11,8138]
+c2seq = 0,0,3,1,5,
+recipes/factor_recipe_884.0-Period[11,8098]
+c2seq = 0,1,2,5,8,
+recipes/factor_recipe_885.0-Period[11,7840]
+c2seq = 0,0,1,0,6,
+recipes/factor_recipe_893.0-Period[11,7880]
+c2seq = 0,0,4,1,10,
+recipes/factor_recipe_900.0-Period[11,8102]
+c2seq = 0,2,4,5,0,
+recipes/factor_recipe_912.0-Period[11,8100]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_918.0-Period[11,7972]
+c2seq = 1,0,4,5,9,
+recipes/factor_recipe_918.0-Period[11,8139]
+c2seq = 0,1,1,1,0,
+recipes/factor_recipe_936.0-Period[11,8162]
+c2seq = 0,0,3,4,10,
+recipes/factor_recipe_936.0-Period[11,8398]
+c2seq = 1,2,0,4,0,
+recipes/factor_recipe_944.0-Period[11,7841]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_969.0-Period[11,8171]
+c2seq = 0,1,2,2,9,
+recipes/factor_recipe_975.0-Period[11,7754]
+c2seq = 1,0,2,6,1,
+recipes/factor_recipe_975.0-Period[11,8394]
+c2seq = 1,1,1,0,1,
+recipes/factor_recipe_980.0-Period[11,8176]
+c2seq = 1,2,1,5,7,
+recipes/factor_recipe_1003.0-Period[11,8424]
+c2seq = 0,0,1,0,1,
+recipes/factor_recipe_1020.0-Period[11,7737]
+c2seq = 0,2,4,1,1,
+recipes/factor_recipe_1020.0-Period[11,8164]
+c2seq = 0,2,4,6,6,
+recipes/factor_recipe_1026.0-Period[11,7889]
+c2seq = 0,2,2,1,7,
+recipes/factor_recipe_1044.0-Period[11,8101]
+c2seq = 0,2,0,5,1,
+recipes/factor_recipe_1064.0-Period[11,8056]
+c2seq = 1,0,0,1,3,
+recipes/factor_recipe_1071.0-Period[11,7881]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_1080.0-Period[11,7755]
+c2seq = 1,0,1,5,9,
+recipes/factor_recipe_1080.0-Period[11,7941]
+c2seq = 0,2,0,3,4,
+recipes/factor_recipe_1083.0-Period[11,7888]
+c2seq = 1,1,0,5,5,
+recipes/factor_recipe_1104.0-Period[11,7742]
+c2seq = 0,2,4,5,1,
+recipes/factor_recipe_1104.0-Period[11,8390]
+c2seq = 1,1,2,3,2,
+recipes/factor_recipe_1118.0-Period[11,7770]
+c2seq = 0,2,1,4,5,
+recipes/factor_recipe_1134.0-Period[11,7757]
+c2seq = 0,2,4,2,10,
+recipes/factor_recipe_1139.0-Period[11,8087]
+c2seq = 0,1,1,2,4,
+recipes/factor_recipe_1152.0-Period[11,8079]
+c2seq = 1,2,1,2,10,
+recipes/factor_recipe_1152.0-Period[11,8082]
+c2seq = 0,1,4,2,8,
+recipes/factor_recipe_1152.0-Period[11,8177]
+c2seq = 0,2,1,6,0,
+recipes/factor_recipe_1156.0-Period[11,7849]
+c2seq = 0,2,4,2,3,
+recipes/factor_recipe_1170.0-Period[11,7768]
+c2seq = 0,2,2,2,0,
+recipes/factor_recipe_1173.0-Period[11,8170]
+c2seq = 0,0,3,5,5,
+recipes/factor_recipe_1173.0-Period[11,8427]
+c2seq = 0,2,0,5,2,
+recipes/factor_recipe_1185.0-Period[11,8261]
+c2seq = 0,0,2,4,10,
+recipes/factor_recipe_1200.0-Period[11,8128]
+c2seq = 1,1,3,6,10,
+recipes/factor_recipe_1206.0-Period[11,8438]
+c2seq = 0,2,4,1,4,
+recipes/factor_recipe_1216.0-Period[11,7726]
+c2seq = 0,1,2,0,9,
+recipes/factor_recipe_1232.0-Period[11,8057]
+c2seq = 1,1,4,1,7,
+recipes/factor_recipe_1232.0-Period[11,8065]
+c2seq = 1,1,4,3,3,
+recipes/factor_recipe_1242.0-Period[11,8146]
+c2seq = 0,0,3,0,2,
+recipes/factor_recipe_1248.0-Period[11,7857]
+c2seq = 0,0,0,2,6,
+recipes/factor_recipe_1288.0-Period[11,8066]
+c2seq = 1,0,1,1,5,
+recipes/factor_recipe_1292.0-Period[11,7041]
+c2seq = 0,1,4,3,2,
+recipes/factor_recipe_1300.0-Period[11,7865]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1302.0-Period[11,7735]
+c2seq = 0,0,4,5,1,
+recipes/factor_recipe_1314.0-Period[11,7817]
+c2seq = 0,2,3,6,1,
+recipes/factor_recipe_1320.0-Period[11,7898]
+c2seq = 1,0,0,4,1,
+recipes/factor_recipe_1328.0-Period[11,8426]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1330.0-Period[11,8033]
+c2seq = 0,1,1,1,7,
+recipes/factor_recipe_1350.0-Period[11,8153]
+c2seq = 1,1,4,1,3,
+recipes/factor_recipe_1365.0-Period[11,7725]
+c2seq = 1,2,1,2,4,
+recipes/factor_recipe_1377.0-Period[11,7858]
+c2seq = 1,1,3,0,4,
+recipes/factor_recipe_1378.0-Period[11,7774] // BUG INCORRECT
+c2seq = 0,0,0,0,0,
+recipes/factor_recipe_1380.0-Period[11,8161]
+c2seq = 1,2,2,3,8,
+recipes/factor_recipe_1386.0-Period[11,7740]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1386.0-Period[11,7942]
+c2seq = 1,0,1,5,10,
+recipes/factor_recipe_1404.0-Period[11,7871]
+c2seq = 0,1,1,0,3,
+recipes/factor_recipe_1425.0-Period[11,7890]
+c2seq = 0,1,2,6,8,
+recipes/factor_recipe_1430.0-Period[11,8134]
+c2seq = 1,0,3,1,2,
+recipes/factor_recipe_1449.0-Period[11,7882]
+c2seq = 0,1,0,5,2,
+recipes/factor_recipe_1452.0-Period[11,7724]
+c2seq = 1,2,4,5,7,
+recipes/factor_recipe_1458.0-Period[11,7992]
+c2seq = 0,2,4,3,2,
+recipes/factor_recipe_1460.0-Period[11,7752]
+c2seq = 1,2,0,2,4,
+recipes/factor_recipe_1482.0-Period[11,7964]
+c2seq = 1,2,3,3,2,
+recipes/factor_recipe_1494.0-Period[11,7938]
+c2seq = 1,2,2,1,10,
+recipes/factor_recipe_1501.0-Period[11,8301]
+c2seq = 1,1,4,5,0,
+recipes/factor_recipe_1512.0-Period[11,8097]
+c2seq = 0,2,0,6,10,
+recipes/factor_recipe_1518.0-Period[11,7985]
+c2seq = 0,1,1,4,5,
+recipes/factor_recipe_1520.0-Period[11,8106]
+c2seq = 1,1,1,1,1,
+recipes/factor_recipe_1530.0-Period[11,7761]
+c2seq = 0,2,0,6,7,
+recipes/factor_recipe_1533.0-Period[11,8174]
+c2seq = 0,0,4,1,0,
+recipes/factor_recipe_1539.0-Period[11,8541]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_1554.0-Period[11,7756]
+c2seq = 0,0,2,3,10,
+recipes/factor_recipe_1554.0-Period[11,8175]
+c2seq = 1,0,1,2,4,
+recipes/factor_recipe_1562.0-Period[11,8073]
+c2seq = 1,1,2,6,3,
+recipes/factor_recipe_1562.0-Period[11,8086]
+c2seq = 1,0,4,6,2,
+recipes/factor_recipe_1566.0-Period[11,7850]
+c2seq = 1,1,4,4,10,
+recipes/factor_recipe_1566.0-Period[11,8077]
+c2seq = 0,2,3,2,8,
+recipes/factor_recipe_1568.0-Period[11,7886]
+c2seq = 0,1,0,1,4,
+recipes/factor_recipe_1575.0-Period[11,8323]
+c2seq = 0,0,2,1,4,
+recipes/factor_recipe_1590.0-Period[11,7794]
+c2seq = 0,0,2,6,10,
+recipes/factor_recipe_1596.0-Period[11,8178]
+c2seq = 1,0,4,1,2,
+recipes/factor_recipe_1599.0-Period[11,7866]
+c2seq = 0,0,1,0,1,
+recipes/factor_recipe_1608.0-Period[11,7736]
+c2seq = 1,0,0,6,9,
+recipes/factor_recipe_1615.0-Period[11,7760]
+c2seq = 0,1,4,0,5,
+recipes/factor_recipe_1620.0-Period[11,7804]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1632.0-Period[11,7790]
+c2seq = 0,0,1,1,8,
+recipes/factor_recipe_1632.0-Period[11,7891]
+c2seq = 0,0,1,4,1,
+recipes/factor_recipe_1638.0-Period[11,8314]
+c2seq = 0,0,2,3,1,
+recipes/factor_recipe_1638.0-Period[11,8480]
+c2seq = 0,1,2,0,1,
+recipes/factor_recipe_1640.0-Period[11,7946]
+c2seq = 1,1,0,2,6,
+recipes/factor_recipe_1648.0-Period[11,8061]
+c2seq = 1,1,4,0,6,
+recipes/factor_recipe_1660.0-Period[11,8396]
+c2seq = 1,1,0,6,0,
+recipes/factor_recipe_1664.0-Period[11,8537]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1665.0-Period[11,7771]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1672.0-Period[11,8108]
+c2seq = 0,1,4,4,2,
+recipes/factor_recipe_1677.0-Period[11,8080]
+c2seq = 1,0,4,6,7,
+recipes/factor_recipe_1680.0-Period[11,8070]
+c2seq = 0,2,2,4,10,
+recipes/factor_recipe_1702.0-Period[11,8038]
+c2seq = 0,0,0,4,9,
+recipes/factor_recipe_1710.0-Period[11,7845]
+c2seq = 0,0,2,6,5,
+recipes/factor_recipe_1710.0-Period[11,8538]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_1720.0-Period[11,7844]
+c2seq = 0,0,1,5,6,
+recipes/factor_recipe_1729.0-Period[11,8137]
+c2seq = 0,1,2,0,0,
+recipes/factor_recipe_1740.0-Period[11,8013]
+c2seq = 0,2,4,5,2,
+recipes/factor_recipe_1748.0-Period[11,8179]
+c2seq = 0,0,0,1,7,
+recipes/factor_recipe_1771.0-Period[11,8044]
+c2seq = 1,2,3,6,8,
+recipes/factor_recipe_1780.0-Period[11,7949]
+c2seq = 1,2,0,4,0,
+recipes/factor_recipe_1782.0-Period[11,7801]
+c2seq = 0,1,1,1,10,
+recipes/factor_recipe_1782.0-Period[11,7979]
+c2seq = 0,1,2,3,9,
+recipes/factor_recipe_1782.0-Period[11,8302]
+c2seq = 0,2,1,1,10,
+recipes/factor_recipe_1785.0-Period[11,8425]
+c2seq = 0,0,3,6,9,
+recipes/factor_recipe_1786.0-Period[11,8095]
+c2seq = 0,0,2,3,1,
+recipes/factor_recipe_1800.0-Period[11,7796]
+c2seq = 1,0,2,5,10,
+recipes/factor_recipe_1800.0-Period[11,8173]
+c2seq = 0,0,2,2,6,
+recipes/factor_recipe_1800.0-Period[11,8461]
+c2seq = 0,0,2,3,3,
+recipes/factor_recipe_1806.0-Period[11,7940]
+c2seq = 0,2,2,6,5,
+recipes/factor_recipe_1818.0-Period[11,8163]
+c2seq = 0,2,3,1,7,
+recipes/factor_recipe_1840.0-Period[11,8372]
+c2seq = 0,2,0,2,9,
+recipes/factor_recipe_1840.0-Period[11,8397]
+c2seq = 0,2,0,1,8,
+recipes/factor_recipe_1848.0-Period[11,7731]
+c2seq = 0,2,1,2,2,
+recipes/factor_recipe_1848.0-Period[11,7883]
+c2seq = 0,1,0,0,10,
+recipes/factor_recipe_1848.0-Period[11,7982]
+c2seq = 1,0,1,0,3,
+recipes/factor_recipe_1860.0-Period[11,7789]
+c2seq = 1,1,4,5,2,
+recipes/factor_recipe_1863.0-Period[11,8145]
+c2seq = 1,2,0,6,1,
+recipes/factor_recipe_1863.0-Period[11,8152]
+c2seq = 0,2,1,4,6,
+recipes/factor_recipe_1863.0-Period[11,8309]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_1863.0-Period[11,8310]
+c2seq = 1,1,4,3,6,
+recipes/factor_recipe_1869.0-Period[11,8254]
+c2seq = 0,1,2,6,8,
+recipes/factor_recipe_1872.0-Period[11,7733]
+c2seq = 1,2,0,1,10,
+recipes/factor_recipe_1880.0-Period[11,7800]
+c2seq = 1,1,4,6,2,
+recipes/factor_recipe_1888.0-Period[11,7783]
+c2seq = 0,0,0,1,3,
+recipes/factor_recipe_1904.0-Period[11,7769]
+c2seq = 0,2,1,4,5,
+recipes/factor_recipe_1908.0-Period[11,7859]
+c2seq = 0,2,4,6,7,
+recipes/factor_recipe_1914.0-Period[11,7991]
+c2seq = 1,0,2,1,2,
+recipes/factor_recipe_1926.0-Period[11,7746]
+c2seq = 1,2,0,6,9,
+recipes/factor_recipe_1932.0-Period[11,7751]
+c2seq = 1,0,4,0,10,
+recipes/factor_recipe_1944.0-Period[11,7930]
+c2seq = 1,1,2,1,0,
+recipes/factor_recipe_1952.0-Period[11,7973]
+c2seq = 1,1,4,1,7,
+recipes/factor_recipe_1955.0-Period[11,8053]
+c2seq = 1,2,0,0,7,
+recipes/factor_recipe_1957.0-Period[11,8172]
+c2seq = 0,1,1,1,0,
+recipes/factor_recipe_1962.0-Period[11,8052]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_1965.0-Period[11,8043]
+c2seq = 0,1,0,4,4,
+recipes/factor_recipe_1972.0-Period[11,7923]
+c2seq = 1,0,1,0,7,
+recipes/factor_recipe_1976.0-Period[11,7784]
+c2seq = 0,1,2,6,8,
+recipes/factor_recipe_1976.0-Period[11,7799]
+c2seq = 1,1,2,3,1,
+recipes/factor_recipe_1980.0-Period[11,8090]
+c2seq = 1,1,0,0,8,
+recipes/factor_recipe_1995.0-Period[11,8260]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_1995.0-Period[11,8270]
+c2seq = 1,2,1,5,7,
+recipes/factor_recipe_2016.0-Period[11,8040]
+c2seq = 0,2,2,3,2,
+recipes/factor_recipe_2024.0-Period[11,8454]
+c2seq = 1,0,1,1,5,
+recipes/factor_recipe_2025.0-Period[11,8116]
+c2seq = 1,1,4,4,6,
+recipes/factor_recipe_2033.0-Period[11,8001]
+c2seq = 0,0,4,2,10,
+recipes/factor_recipe_2037.0-Period[11,7753]
+c2seq = 0,0,0,0,4,
+recipes/factor_recipe_2050.0-Period[11,8392]
+c2seq = 1,2,3,5,10,
+recipes/factor_recipe_2058.0-Period[11,8140]
+c2seq = 0,0,4,0,5,
+recipes/factor_recipe_2060.0-Period[11,7029]
+c2seq = 1,1,0,6,2,
+recipes/factor_recipe_2070.0-Period[11,7732]
+c2seq = 0,1,4,0,5,
+recipes/factor_recipe_2074.0-Period[11,6974]
+c2seq = 0,0,2,6,5,
+recipes/factor_recipe_2075.0-Period[11,8539]
+c2seq = 1,1,0,1,1,
+recipes/factor_recipe_2080.0-Period[11,7024]
+c2seq = 0,1,3,3,3,
+recipes/factor_recipe_2080.0-Period[11,7593]
+c2seq = 1,1,2,5,8,
+recipes/factor_recipe_2080.0-Period[11,7675]
+c2seq = 1,1,4,6,8,
+recipes/factor_recipe_2080.0-Period[11,8553]
+c2seq = 0,1,4,4,10,
+recipes/factor_recipe_2088.0-Period[11,7614]
+c2seq = 1,0,0,3,4,
+recipes/factor_recipe_2088.0-Period[11,7984]
+c2seq = 1,0,3,6,5,
+recipes/factor_recipe_2090.0-Period[11,8109]
+c2seq = 0,2,3,2,8,
+recipes/factor_recipe_2096.0-Period[11,7994]
+c2seq = 1,2,2,5,2,
+recipes/factor_recipe_2100.0-Period[11,7255]
+c2seq = 1,0,4,5,8,
+recipes/factor_recipe_2108.0-Period[11,7458]
+c2seq = 1,1,1,5,2,
+recipes/factor_recipe_2108.0-Period[11,8024]
+c2seq = 0,2,0,6,6,
+recipes/factor_recipe_2109.0-Period[11,7808]
+c2seq = 1,2,0,2,5,
+recipes/factor_recipe_2112.0-Period[11,7291]
+c2seq = 1,1,0,6,2,
+
+recipes/factor_recipe_2112.0-Period[11,7750]
+c2seq = 0,1,3,5,10,
+recipes/factor_recipe_2112.0-Period[11,7929]
+c2seq = 1,0,0,0,5,
+recipes/factor_recipe_2120.0-Period[11,7654]
+c2seq = 1,0,3,6,6,
+recipes/factor_recipe_2120.0-Period[11,8142]
+c2seq = 0,2,2,5,1,
+recipes/factor_recipe_2120.0-Period[11,8437]
+c2seq = 0,0,2,4,1,
+recipes/factor_recipe_2121.0-Period[11,7951]
+c2seq = 1,0,0,4,3,
+recipes/factor_recipe_2124.0-Period[11,7294]
+c2seq = 1,1,3,2,1,
+recipes/factor_recipe_2128.0-Period[11,7365]
+c2seq = 0,2,1,4,5,
+recipes/factor_recipe_2128.0-Period[11,7695]
+c2seq = 1,0,4,0,10,
+recipes/factor_recipe_2139.0-Period[11,8362]
+c2seq = 1,2,3,0,2,
+recipes/factor_recipe_2142.0-Period[11,7348]
+c2seq = 0,2,1,6,5,
+recipes/factor_recipe_2142.0-Period[11,8104]
+c2seq = 0,2,0,0,0,
+recipes/factor_recipe_2142.0-Period[11,8133]
+c2seq = 0,1,4,5,5,
+recipes/factor_recipe_2144.0-Period[11,7312]
+c2seq = 0,1,0,1,7,
+recipes/factor_recipe_2144.0-Period[11,8018]
+c2seq = 1,0,3,0,7,
+recipes/factor_recipe_2159.0-Period[11,7927]
+c2seq = 1,0,4,5,8,
+recipes/factor_recipe_2159.0-Period[11,7962]
+c2seq = 0,0,2,2,4,
+recipes/factor_recipe_2160.0-Period[11,7437]
+c2seq = 0,1,0,6,1,
+recipes/factor_recipe_2160.0-Period[11,8456]
+c2seq = 1,1,3,1,8,
+recipes/factor_recipe_2160.0-Period[11,8542]
+c2seq = 0,2,3,1,4,
+recipes/factor_recipe_2163.0-Period[11,7567]
+c2seq = 1,1,3,6,8,
+recipes/factor_recipe_2163.0-Period[11,7993]
+c2seq = 0,2,0,2,7,
+recipes/factor_recipe_2166.0-Period[11,7546]
+c2seq = 1,2,3,5,5,
+recipes/factor_recipe_2175.0-Period[11,7292]
+c2seq = 0,1,0,6,1,
+recipes/factor_recipe_2178.0-Period[11,6975]
+c2seq = 0,0,3,1,4,
+recipes/factor_recipe_2178.0-Period[11,7354]
+c2seq = 1,0,2,6,1,
+recipes/factor_recipe_2178.0-Period[11,7368]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_2185.0-Period[11,7931]
+c2seq = 0,0,3,5,8,
+recipes/factor_recipe_2187.0-Period[11,8118]
+c2seq = 0,2,1,2,1,
+recipes/factor_recipe_2192.0-Period[11,7975]
+c2seq = 0,0,3,6,9,
+recipes/factor_recipe_2196.0-Period[11,7440]
+c2seq = 0,0,4,0,9,
+recipes/factor_recipe_2200.0-Period[11,7084]
+c2seq = 1,2,0,5,7,
+recipes/factor_recipe_2200.0-Period[11,7125]
+c2seq = 0,1,4,1,4,
+recipes/factor_recipe_2205.0-Period[11,7805]
+c2seq = 1,0,4,1,0,
+recipes/factor_recipe_2214.0-Period[11,7937]
+c2seq = 0,2,0,3,1,
+recipes/factor_recipe_2220.0-Period[11,7747]
+c2seq = 1,1,3,5,9,
+recipes/factor_recipe_2220.0-Period[11,7809]
+c2seq = 1,0,1,5,9,
+recipes/factor_recipe_2222.0-Period[11,7730]
+c2seq = 1,1,0,3,1,
+recipes/factor_recipe_2222.0-Period[11,8023]
+c2seq = 1,1,0,4,1,
+recipes/factor_recipe_2223.0-Period[11,7694]
+c2seq = 0,2,1,4,5,
+recipes/factor_recipe_2226.0-Period[11,7867]
+c2seq = 0,0,0,1,1,
+recipes/factor_recipe_2231.0-Period[11,7948]
+c2seq = 0,2,0,6,3,
+recipes/factor_recipe_2231.0-Period[11,8278]
+c2seq = 0,0,4,1,0,
+recipes/factor_recipe_2232.0-Period[11,7127]
+c2seq = 1,0,0,0,9,
+recipes/factor_recipe_2232.0-Period[11,7667]
+c2seq = 0,1,0,4,8,
+recipes/factor_recipe_2242.0-Period[11,7086]
+c2seq = 0,0,4,5,8,
+recipes/factor_recipe_2242.0-Period[11,8377]
+c2seq = 1,0,0,1,6,
+recipes/factor_recipe_2250.0-Period[11,7851]
+c2seq = 1,0,0,1,7,
+recipes/factor_recipe_2260.0-Period[11,7526]
+c2seq = 1,0,2,6,1,
+recipes/factor_recipe_2261.0-Period[11,7005]
+c2seq = 0,2,3,2,4,
+recipes/factor_recipe_2261.0-Period[11,7537]
+c2seq = 1,2,2,4,0,
+recipes/factor_recipe_2261.0-Period[11,7676]
+c2seq = 0,1,0,1,8,
+recipes/factor_recipe_2266.0-Period[11,8089]
+c2seq = 0,0,1,1,9,
+recipes/factor_recipe_2268.0-Period[11,8107]
+c2seq = 1,1,3,1,5,
+recipes/factor_recipe_2278.0-Period[11,8273]
+c2seq = 0,2,0,2,2,
+recipes/factor_recipe_2280.0-Period[11,7313]
+c2seq = 0,2,2,3,1,
+recipes/factor_recipe_2280.0-Period[11,8544]
+c2seq = 1,2,3,5,9,
+recipes/factor_recipe_2280.0-Period[11,8545]
+c2seq = 0,0,4,1,3,
+recipes/factor_recipe_2296.0-Period[11,8062]
+c2seq = 1,2,0,4,10,
+recipes/factor_recipe_2299.0-Period[11,8549]
+c2seq = 0,2,1,3,7,
+recipes/factor_recipe_2300.0-Period[11,7298]
+c2seq = 0,0,4,0,1,
+recipes/factor_recipe_2304.0-Period[11,7499]
+c2seq = 1,2,4,4,4,
+recipes/factor_recipe_2310.0-Period[11,7605]
+c2seq = 0,1,0,6,5,
+recipes/factor_recipe_2320.0-Period[11,7098]
+c2seq = 0,1,4,1,2,
+recipes/factor_recipe_2323.0-Period[11,7552]
+c2seq = 1,2,0,1,10,
+recipes/factor_recipe_2329.0-Period[11,7922]
+c2seq = 0,0,2,4,0,
+recipes/factor_recipe_2332.0-Period[11,8556]
+c2seq = 0,0,0,2,6,
+recipes/factor_recipe_2336.0-Period[11,7185]
+c2seq = 1,1,4,6,2,
+recipes/factor_recipe_2337.0-Period[11,7442]
+c2seq = 0,2,4,0,9,
+recipes/factor_recipe_2337.0-Period[11,7626]
+c2seq = 1,2,2,1,2,
+recipes/factor_recipe_2340.0-Period[11,7540]
+c2seq = 0,1,0,0,2,
+recipes/factor_recipe_2340.0-Period[11,7607]
+c2seq = 1,0,4,3,10,
+recipes/factor_recipe_2340.0-Period[11,8209]
+c2seq = 1,1,0,0,6,
+recipes/factor_recipe_2346.0-Period[11,7257]
+c2seq = 0,0,3,4,1,
+recipes/factor_recipe_2346.0-Period[11,7734]
+c2seq = 1,1,3,0,4,
+recipes/factor_recipe_2352.0-Period[11,7283]
+c2seq = 0,2,2,2,0,
+recipes/factor_recipe_2352.0-Period[11,7684]
+c2seq = 0,1,3,5,6,
+recipes/factor_recipe_2354.0-Period[11,7687]
+c2seq = 0,0,2,4,0,
+recipes/factor_recipe_2358.0-Period[11,7375]
+c2seq = 0,1,3,2,8,
+recipes/factor_recipe_2368.0-Period[11,7652]
+c2seq = 0,0,1,6,9,
+recipes/factor_recipe_2373.0-Period[11,7039]
+c2seq = 1,2,4,0,2,
+recipes/factor_recipe_2375.0-Period[11,7843]
+c2seq = 1,0,0,3,5,
+recipes/factor_recipe_2376.0-Period[11,7189]
+c2seq = 0,1,0,4,5,
+recipes/factor_recipe_2376.0-Period[11,7396]
+c2seq = 1,0,3,3,8,
+recipes/factor_recipe_2376.0-Period[11,7403]
+c2seq = 1,1,1,1,1,
+recipes/factor_recipe_2376.0-Period[11,7413]
+c2seq = 0,0,1,4,7,
+recipes/factor_recipe_2376.0-Period[11,7583]
+c2seq = 1,0,4,0,9,
+recipes/factor_recipe_2376.0-Period[11,7916]
+c2seq = 1,2,1,4,1,
+recipes/factor_recipe_2376.0-Period[11,8031]
+c2seq = 0,0,3,5,1,
+recipes/factor_recipe_2380.0-Period[11,8169]
+c2seq = 1,2,4,0,0,
+recipes/factor_recipe_2392.0-Period[11,7390]
+c2seq = 1,1,1,1,1,
+recipes/factor_recipe_2394.0-Period[11,7079]
+c2seq = 0,0,1,0,0,
+recipes/factor_recipe_2397.0-Period[11,7826]
+c2seq = 0,2,2,5,4,
+recipes/factor_recipe_2400.0-Period[11,7256]
+c2seq = 1,2,1,2,5,
+recipes/factor_recipe_2403.0-Period[11,7971]
+c2seq = 1,1,0,0,2,
+recipes/factor_recipe_2413.0-Period[11,8422]
+c2seq = 0,2,3,4,9,
+recipes/factor_recipe_2414.0-Period[11,7489]
+c2seq = 1,2,2,4,10,
+recipes/factor_recipe_2415.0-Period[11,7660]
+c2seq = 1,2,2,0,2,
+recipes/factor_recipe_2415.0-Period[11,7803]
+c2seq = 0,0,4,5,7,
+recipes/factor_recipe_2418.0-Period[11,7414]
+c2seq = 1,1,0,6,5,
+recipes/factor_recipe_2420.0-Period[11,7350]
+c2seq = 0,2,1,4,3,
+recipes/factor_recipe_2420.0-Period[11,7806]
+c2seq = 1,1,3,1,10,
+recipes/factor_recipe_2430.0-Period[11,7415]
+c2seq = 0,1,2,5,4,
+recipes/factor_recipe_2430.0-Period[11,7498]
+c2seq = 0,1,4,5,9,
+recipes/factor_recipe_2430.0-Period[11,7723]
+c2seq = 1,1,1,5,3,
+recipes/factor_recipe_2430.0-Period[11,8428]
+c2seq = 0,0,2,1,10,
+recipes/factor_recipe_2431.0-Period[11,8331]
+c2seq = 0,2,0,5,2,
+recipes/factor_recipe_2436.0-Period[11,7952]
+c2seq = 0,0,4,3,9,
+recipes/factor_recipe_2436.0-Period[11,8319]
+c2seq = 0,0,3,1,10,
+recipes/factor_recipe_2438.0-Period[11,7758]
+c2seq = 0,1,0,5,1,
+recipes/factor_recipe_2448.0-Period[11,7669]
+c2seq = 0,1,3,4,8,
+recipes/factor_recipe_2448.0-Period[11,8007]
+c2seq = 0,1,4,5,10,
+recipes/factor_recipe_2448.0-Period[11,8011]
+c2seq = 1,1,3,4,3,
+recipes/factor_recipe_2448.0-Period[11,8338]
+c2seq = 0,0,2,0,6,
+recipes/factor_recipe_2448.0-Period[11,8339]
+c2seq = 0,2,1,5,6,
+recipes/factor_recipe_2464.0-Period[11,7410]
+c2seq = 0,0,4,3,1,
+recipes/factor_recipe_2464.0-Period[11,8262]
+c2seq = 1,1,3,3,3,
+recipes/factor_recipe_2464.0-Period[11,8487]
+c2seq = 0,0,4,1,0,
+recipes/factor_recipe_2465.0-Period[11,8025]
+c2seq = 0,2,4,4,1,
+recipes/factor_recipe_2466.0-Period[11,7139]
+c2seq = 0,1,2,6,2,
+recipes/factor_recipe_2466.0-Period[11,8026]
+c2seq = 0,1,2,1,4,
+recipes/factor_recipe_2472.0-Period[11,8060]
+c2seq = 1,2,1,3,6,
+recipes/factor_recipe_1464.0-Period[11,7238]
+c2seq = 0,1,1,0,
+2,
+recipes/factor_recipe_1479.0-Period[11,7810]
+c2seq = 0,2,1,6,5,
+recipes/factor_recipe_1480.0-Period[11,7082]
+c2seq = 0,1,0,6,5,
+recipes/factor_recipe_1596.0-Period[11,7252]
+c2seq = 1,2,4,1,3,
+recipes/factor_recipe_1638.0-Period[11,8032]
+c2seq = 0,1,2,6,8,
+recipes/factor_recipe_1694.0-Period[11,7106]
+c2seq = 0,0,4,3,2,
+recipes/factor_recipe_1728.0-Period[11,7802]
+c2seq = 1,0,2,6,7,
+recipes/factor_recipe_1880.0-Period[11,7606]
+c2seq = 0,0,0,4,5,
+recipes/factor_recipe_1980.0-Period[11,6969]
+c2seq = 1,1,3,6,2,
+recipes/factor_recipe_2016.0-Period[11,7729]
+c2seq = 0,2,0,0,6,
+recipes/factor_recipe_2052.0-Period[11,7708]
+c2seq = 1,0,1,5,9,
+recipes/factor_recipe_2070.0-Period[11,7100]
+c2seq = 0,2,3,3,6,
+recipes/factor_recipe_2112.0-Period[11,7509]
+c2seq = 1,1,0,4,1,
+recipes/factor_recipe_2310.0-Period[11,7254]
+c2seq = 0,1,0,0,9,
+recipes/factor_recipe_2360.0-Period[11,7409]
+c2seq = 0,1,2,5,4,
+recipes/factor_recipe_2360.0-Period[11,7638]
+c2seq = 1,2,1,0,10,
+recipes/factor_recipe_2376.0-Period[11,7021]
+c2seq = 0,0,2,5,9,
+recipes/factor_recipe_2376.0-Period[11,7517]
+c2seq = 0,0,0,2,6,
+recipes/factor_recipe_2394.0-Period[11,6983]
+c2seq = 1,0,4,5,4,
+recipes/factor_recipe_2394.0-Period[11,7944]
+c2seq = 1,0,4,3,1,
+recipes/factor_recipe_2448.0-Period[11,7709]
+c2seq = 1,0,1,5,9,
+recipes/factor_recipe_2457.0-Period[11,7759]
+c2seq = 0,0,4,4,9,
+recipes/factor_recipe_2478.0-Period[11,7367]
+c2seq = 0,2,4,3,8,
+recipes/factor_recipe_2478.0-Period[11,7400]
+c2seq = 0,2,4,4,1,
+recipes/factor_recipe_2484.0-Period[11,7382]
+c2seq = 0,1,1,0,4,
+recipes/factor_recipe_2494.0-Period[11,6970]
+c2seq = 1,2,3,2,7,
+recipes/factor_recipe_2496.0-Period[11,7728]
+c2seq = 1,2,1,6,2,
+recipes/factor_recipe_2496.0-Period[11,8135]
+c2seq = 0,2,0,0,1,
+recipes/factor_recipe_2500.0-Period[11,7551]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_2502.0-Period[11,7121]
+c2seq = 0,0,4,1,0,
+recipes/factor_recipe_2502.0-Period[11,8027]
+c2seq = 1,1,2,2,1,
+recipes/factor_recipe_2505.0-Period[11,7331]
+c2seq = 0,2,4,1,1,
+recipes/factor_recipe_2520.0-Period[11,7495]
+c2seq = 0,0,4,4,2,
+recipes/factor_recipe_2520.0-Period[11,7666]
+c2seq = 0,1,4,1,8,
+recipes/factor_recipe_2520.0-Period[11,7963]
+c2seq = 0,0,4,0,5,
+recipes/factor_recipe_2520.0-Period[11,8036]
+c2seq = 0,2,3,1,10,
+recipes/factor_recipe_2522.0-Period[11,8074]
+c2seq = 0,2,2,0,3,
+recipes/factor_recipe_2530.0-Period[11,7299]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_2530.0-Period[11,7656]
+c2seq = 1,1,4,1,5,
+recipes/factor_recipe_2535.0-Period[11,8268]
+c2seq = 1,2,3,0,6,
+recipes/factor_recipe_2538.0-Period[11,7512]
+c2seq = 0,2,3,2,3,
+recipes/factor_recipe_2540.0-Period[11,8376]
+c2seq = 0,1,2,0,6,
+recipes/factor_recipe_2544.0-Period[11,7549]
+c2seq = 0,2,3,3,4,
+recipes/factor_recipe_2546.0-Period[11,7140]
+c2seq = 0,1,0,2,2,
+recipes/factor_recipe_2546.0-Period[11,7569]
+c2seq = 1,0,2,4,2,
+recipes/factor_recipe_2548.0-Period[11,7314]
+c2seq = 1,1,4,1,4,
+recipes/factor_recipe_2550.0-Period[11,7915]
+c2seq = 0,0,3,0,3,
+recipes/factor_recipe_2556.0-Period[11,8547]
+c2seq = 0,0,2,5,7,
+recipes/factor_recipe_2560.0-Period[11,7591]
+c2seq = 0,2,2,1,5,
+recipes/factor_recipe_2560.0-Period[11,8335]
+c2seq = 0,0,0,3,9,
+recipes/factor_recipe_2568.0-Period[11,8148]
+c2seq = 0,2,0,5,10,
+recipes/factor_recipe_2575.0-Period[11,8305]
+c2seq = 1,0,0,1,5,
+recipes/factor_recipe_2583.0-Period[11,8122]
+c2seq = 0,2,2,4,4,
+recipes/factor_recipe_2584.0-Period[11,7264]
+c2seq = 0,1,2,1,9,
+
+recipes/factor_recipe_2520.0-Period[11,7495]
+c2seq = 0,0,4,4,2,
+recipes/factor_recipe_2520.0-Period[11,7666]
+c2seq = 0,1,4,1,8,
+recipes/factor_recipe_2520.0-Period[11,7963]
+c2seq = 0,0,4,0,5,
+recipes/factor_recipe_2520.0-Period[11,8036]
+c2seq = 0,2,3,1,10,
+recipes/factor_recipe_2522.0-Period[11,8074]
+c2seq = 0,2,2,0,3,
+recipes/factor_recipe_2530.0-Period[11,7299]
+c2seq = 1,0,1,5,4,
+recipes/factor_recipe_2530.0-Period[11,7656]
+c2seq = 1,1,4,1,5,
+recipes/factor_recipe_2535.0-Period[11,8268]
+c2seq = 1,2,3,0,6,
+recipes/factor_recipe_2538.0-Period[11,7512]
+c2seq = 0,2,3,2,3,
+recipes/factor_recipe_2544.0-Period[11,7549]
+c2seq = 0,2,3,3,4,
+recipes/factor_recipe_2546.0-Period[11,7140]
+c2seq = 0,1,0,2,
